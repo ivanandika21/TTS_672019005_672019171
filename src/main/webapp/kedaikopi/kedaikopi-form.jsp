@@ -547,7 +547,7 @@
 			// Makanan
 			var hargatotal = 0;
 			var countMkn1 = 0, countMkn2 = 0, countMkn3 = 0;
-			var countMnm1 = 0, countMnm2 = 0, countMnm3 = 0;
+			var countMnm1 = 0, countMnm2 = 0, countMnm3 = 0, countMnm4 = 0, countMnm5 = 0, countMnm6 = 0, countMnm7 = 0, countMnm8 = 0, countMnm9 = 0, countMnm10 = 0, countMnm11 = 0, countMnm12 = 0, countMnm13 = 0, countMnm14 = 0, countMnm15 = 0;
 			var tempMkn = '';
 			var tempMnm = '';
 			const arrMakanan = [];
@@ -760,7 +760,7 @@
 			    var formMinuman = document.getElementById('minuman');
 			    var formHarga = document.getElementById('harga');
 			    var formJumlahMnm = document.getElementById('jumlahMnm');
-			    formHarga.value = (hargatotal += 15000);
+			    formHarga.value = (hargatotal += 8000);
 			    countMnm1 += 1;
 			    
 			    document.getElementById("jml-mnm-1").innerHTML = countMnm1;
@@ -793,7 +793,7 @@
 			    }
 			});
 			
-			document.getElementById("ms-mkn-1").addEventListener('click', function () {
+			document.getElementById("ms-mnm-1").addEventListener('click', function () {
 		    	countMnm1 -= 1;
 		    	document.getElementById("jml-mnm-1").innerHTML = countMnm1;
 		    	var formJumlahMnm = document.getElementById('jumlahMnm');
@@ -804,66 +804,736 @@
 		    		}
 		    	}
 		    	var formHarga = document.getElementById('harga');
-			    formHarga.value = (hargatotal -= 15000);
+			    formHarga.value = (hargatotal -= 8000);
 		    });
 
 			// MINUMAN 2
-			document.getElementById("minuman-2").addEventListener('click', function () {
-			    var formMakanan = document.getElementById('minuman');
-			    formMakanan.value += 'Kopi Susu Mercury; ';
+			document.getElementById("ps-mnm-2").addEventListener('click', function () {
+			    var formMinuman = document.getElementById('minuman');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMnm = document.getElementById('jumlahMnm');
+			    formHarga.value = (hargatotal += 10000);
+			    countMnm2 += 1;
+			    
+			    document.getElementById("jml-mnm-2").innerHTML = countMnm2;
+			    
+			    tempMnm = ' Kopi Susu Mercury';
+		    	
+			    if (arrMinuman.length == 0){
+			    	arrCountMnm.push(countMnm2);
+			    	formJumlahMnm.value = arrCountMnm;
+			    	
+			    	arrMinuman.push(tempMnm);
+			    	formMinuman.value = arrMinuman[0];
+			    } else {
+			    	for (var i = 0; i <= arrMinuman.length; i++){
+			    		if (arrMinuman.includes(tempMnm)){
+			    			for (var j = 0; j <= arrMinuman.length; j++){
+			    				if (arrMinuman[j] == ' Kopi Susu Mercury'){
+					    			arrCountMnm[j] = countMnm2;
+					    			formJumlahMnm.value = arrCountMnm;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMinuman.push(tempMnm);
+			    			arrCountMnm.push(countMnm2);
+			    		}
+			    	}
+			    	formMinuman.value = arrMinuman;
+			    	formJumlahMnm.value = arrCountMnm;
+			    }
 			});
-			document.getElementById("minuman-3").addEventListener('click', function () {
-			    var formMakanan = document.getElementById('minuman');
-			    formMakanan.value += 'Expresso; ';
+			
+			document.getElementById("ms-mnm-2").addEventListener('click', function () {
+		    	countMnm2 -= 1;
+		    	document.getElementById("jml-mnm-2").innerHTML = countMnm2;
+		    	var formJumlahMnm = document.getElementById('jumlahMnm');
+		    	for (var i = 0; i <= arrMinuman.length; i++){
+		    		if (arrMinuman[i] == ' Kopi Susu Mercury'){
+		    			arrCountMnm[i] = countMnm2;
+		    			formJumlahMnm.value = arrCountMnm;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 10000);
+		    });
+			
+			// MINUMAN 3
+			document.getElementById("ps-mnm-3").addEventListener('click', function () {
+			    var formMinuman = document.getElementById('minuman');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMnm = document.getElementById('jumlahMnm');
+			    formHarga.value = (hargatotal += 11000);
+			    countMnm3 += 1;
+			    
+			    document.getElementById("jml-mnm-3").innerHTML = countMnm3;
+			    
+			    tempMnm = ' Expresso';
+		    	
+			    if (arrMinuman.length == 0){
+			    	arrCountMnm.push(countMnm3);
+			    	formJumlahMnm.value = arrCountMnm;
+			    	
+			    	arrMinuman.push(tempMnm);
+			    	formMinuman.value = arrMinuman[0];
+			    } else {
+			    	for (var i = 0; i <= arrMinuman.length; i++){
+			    		if (arrMinuman.includes(tempMnm)){
+			    			for (var j = 0; j <= arrMinuman.length; j++){
+			    				if (arrMinuman[j] == ' Expresso'){
+					    			arrCountMnm[j] = countMnm3;
+					    			formJumlahMnm.value = arrCountMnm;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMinuman.push(tempMnm);
+			    			arrCountMnm.push(countMnm3);
+			    		}
+			    	}
+			    	formMinuman.value = arrMinuman;
+			    	formJumlahMnm.value = arrCountMnm;
+			    }
 			});
-			document.getElementById("minuman-4").addEventListener('click', function () {
-			    var formMakanan = document.getElementById('minuman');
-			    formMakanan.value += 'Americano; ';
+			
+			document.getElementById("ms-mnm-3").addEventListener('click', function () {
+		    	countMnm3 -= 1;
+		    	document.getElementById("jml-mnm-3").innerHTML = countMnm3;
+		    	var formJumlahMnm = document.getElementById('jumlahMnm');
+		    	for (var i = 0; i <= arrMinuman.length; i++){
+		    		if (arrMinuman[i] == ' Expresso'){
+		    			arrCountMnm[i] = countMnm3;
+		    			formJumlahMnm.value = arrCountMnm;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 11000);
+		    });
+			
+			// MINUMAN 4
+			document.getElementById("ps-mnm-4").addEventListener('click', function () {
+			    var formMinuman = document.getElementById('minuman');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMnm = document.getElementById('jumlahMnm');
+			    formHarga.value = (hargatotal += 11000);
+			    countMnm4 += 1;
+			    
+			    document.getElementById("jml-mnm-4").innerHTML = countMnm4;
+			    
+			    tempMnm = ' Americano';
+		    	
+			    if (arrMinuman.length == 0){
+			    	arrCountMnm.push(countMnm4);
+			    	formJumlahMnm.value = arrCountMnm;
+			    	
+			    	arrMinuman.push(tempMnm);
+			    	formMinuman.value = arrMinuman[0];
+			    } else {
+			    	for (var i = 0; i <= arrMinuman.length; i++){
+			    		if (arrMinuman.includes(tempMnm)){
+			    			for (var j = 0; j <= arrMinuman.length; j++){
+			    				if (arrMinuman[j] == ' Americano'){
+					    			arrCountMnm[j] = countMnm4;
+					    			formJumlahMnm.value = arrCountMnm;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMinuman.push(tempMnm);
+			    			arrCountMnm.push(countMnm4);
+			    		}
+			    	}
+			    	formMinuman.value = arrMinuman;
+			    	formJumlahMnm.value = arrCountMnm;
+			    }
 			});
-			document.getElementById("minuman-5").addEventListener('click', function () {
-			    var formMakanan = document.getElementById('minuman');
-			    formMakanan.value += 'Cafe Latte; ';
+			
+			document.getElementById("ms-mnm-4").addEventListener('click', function () {
+		    	countMnm4 -= 1;
+		    	document.getElementById("jml-mnm-4").innerHTML = countMnm4;
+		    	var formJumlahMnm = document.getElementById('jumlahMnm');
+		    	for (var i = 0; i <= arrMinuman.length; i++){
+		    		if (arrMinuman[i] == ' Americano'){
+		    			arrCountMnm[i] = countMnm4;
+		    			formJumlahMnm.value = arrCountMnm;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 11000);
+		    });
+			
+			// MINUMAN 5
+			document.getElementById("ps-mnm-5").addEventListener('click', function () {
+			    var formMinuman = document.getElementById('minuman');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMnm = document.getElementById('jumlahMnm');
+			    formHarga.value = (hargatotal += 9000);
+			    countMnm5 += 1;
+			    
+			    document.getElementById("jml-mnm-5").innerHTML = countMnm5;
+			    
+			    tempMnm = ' Caffe Latte';
+		    	
+			    if (arrMinuman.length == 0){
+			    	arrCountMnm.push(countMnm5);
+			    	formJumlahMnm.value = arrCountMnm;
+			    	
+			    	arrMinuman.push(tempMnm);
+			    	formMinuman.value = arrMinuman[0];
+			    } else {
+			    	for (var i = 0; i <= arrMinuman.length; i++){
+			    		if (arrMinuman.includes(tempMnm)){
+			    			for (var j = 0; j <= arrMinuman.length; j++){
+			    				if (arrMinuman[j] == ' Caffe Latte'){
+					    			arrCountMnm[j] = countMnm5;
+					    			formJumlahMnm.value = arrCountMnm;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMinuman.push(tempMnm);
+			    			arrCountMnm.push(countMnm5);
+			    		}
+			    	}
+			    	formMinuman.value = arrMinuman;
+			    	formJumlahMnm.value = arrCountMnm;
+			    }
 			});
-			document.getElementById("minuman-6").addEventListener('click', function () {
-			    var formMakanan = document.getElementById('minuman');
-			    formMakanan.value += 'Cappuccino; ';
+			
+			document.getElementById("ms-mnm-5").addEventListener('click', function () {
+		    	countMnm5 -= 1;
+		    	document.getElementById("jml-mnm-5").innerHTML = countMnm5;
+		    	var formJumlahMnm = document.getElementById('jumlahMnm');
+		    	for (var i = 0; i <= arrMinuman.length; i++){
+		    		if (arrMinuman[i] == ' Cafe Latte'){
+		    			arrCountMnm[i] = countMnm5;
+		    			formJumlahMnm.value = arrCountMnm;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 9000);
+		    });
+			
+			//MINUMAN 6
+			document.getElementById("ps-mnm-6").addEventListener('click', function () {
+			    var formMinuman = document.getElementById('minuman');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMnm = document.getElementById('jumlahMnm');
+			    formHarga.value = (hargatotal += 10000);
+			    countMnm6 += 1;
+			    
+			    document.getElementById("jml-mnm-6").innerHTML = countMnm6;
+			    
+			    tempMnm = ' Cappuccino';
+		    	
+			    if (arrMinuman.length == 0){
+			    	arrCountMnm.push(countMnm6);
+			    	formJumlahMnm.value = arrCountMnm;
+			    	
+			    	arrMinuman.push(tempMnm);
+			    	formMinuman.value = arrMinuman[0];
+			    } else {
+			    	for (var i = 0; i <= arrMinuman.length; i++){
+			    		if (arrMinuman.includes(tempMnm)){
+			    			for (var j = 0; j <= arrMinuman.length; j++){
+			    				if (arrMinuman[j] == ' Cappuccino'){
+					    			arrCountMnm[j] = countMnm6;
+					    			formJumlahMnm.value = arrCountMnm;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMinuman.push(tempMnm);
+			    			arrCountMnm.push(countMnm6);
+			    		}
+			    	}
+			    	formMinuman.value = arrMinuman;
+			    	formJumlahMnm.value = arrCountMnm;
+			    }
 			});
-			document.getElementById("minuman-7").addEventListener('click', function () {
-			    var formMakanan = document.getElementById('minuman');
-			    formMakanan.value += 'Kopi Tubruk; ';
+			
+			document.getElementById("ms-mnm-6").addEventListener('click', function () {
+		    	countMnm6 -= 1;
+		    	document.getElementById("jml-mnm-6").innerHTML = countMnm6;
+		    	var formJumlahMnm = document.getElementById('jumlahMnm');
+		    	for (var i = 0; i <= arrMinuman.length; i++){
+		    		if (arrMinuman[i] == ' Cappuccino'){
+		    			arrCountMnm[i] = countMnm6;
+		    			formJumlahMnm.value = arrCountMnm;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 10000);
+		    });
+			
+			// MINUMAN 7
+			document.getElementById("ps-mnm-7").addEventListener('click', function () {
+			    var formMinuman = document.getElementById('minuman');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMnm = document.getElementById('jumlahMnm');
+			    formHarga.value = (hargatotal += 6000);
+			    countMnm7 += 1;
+			    
+			    document.getElementById("jml-mnm-7").innerHTML = countMnm7;
+			    
+			    tempMnm = ' Kopi Tubruk';
+		    	
+			    if (arrMinuman.length == 0){
+			    	arrCountMnm.push(countMnm7);
+			    	formJumlahMnm.value = arrCountMnm;
+			    	
+			    	arrMinuman.push(tempMnm);
+			    	formMinuman.value = arrMinuman[0];
+			    } else {
+			    	for (var i = 0; i <= arrMinuman.length; i++){
+			    		if (arrMinuman.includes(tempMnm)){
+			    			for (var j = 0; j <= arrMinuman.length; j++){
+			    				if (arrMinuman[j] == ' Kopi Tubruk'){
+					    			arrCountMnm[j] = countMnm7;
+					    			formJumlahMnm.value = arrCountMnm;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMinuman.push(tempMnm);
+			    			arrCountMnm.push(countMnm7);
+			    		}
+			    	}
+			    	formMinuman.value = arrMinuman;
+			    	formJumlahMnm.value = arrCountMnm;
+			    }
 			});
-			document.getElementById("minuman-8").addEventListener('click', function () {
-			    var formMakanan = document.getElementById('minuman');
-			    formMakanan.value += 'Kopi V60; ';
+			
+			document.getElementById("ms-mnm-7").addEventListener('click', function () {
+		    	countMnm7 -= 1;
+		    	document.getElementById("jml-mnm-7").innerHTML = countMnm7;
+		    	var formJumlahMnm = document.getElementById('jumlahMnm');
+		    	for (var i = 0; i <= arrMinuman.length; i++){
+		    		if (arrMinuman[i] == ' Kopi Tubruk'){
+		    			arrCountMnm[i] = countMnm7;
+		    			formJumlahMnm.value = arrCountMnm;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 6000);
+		    });
+			
+			// MINUMAN 8
+			document.getElementById("ps-mnm-8").addEventListener('click', function () {
+			    var formMinuman = document.getElementById('minuman');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMnm = document.getElementById('jumlahMnm');
+			    formHarga.value = (hargatotal += 15000);
+			    countMnm8 += 1;
+			    
+			    document.getElementById("jml-mnm-8").innerHTML = countMnm8;
+			    
+			    tempMnm = ' Kopi V60';
+		    	
+			    if (arrMinuman.length == 0){
+			    	arrCountMnm.push(countMnm8);
+			    	formJumlahMnm.value = arrCountMnm;
+			    	
+			    	arrMinuman.push(tempMnm);
+			    	formMinuman.value = arrMinuman[0];
+			    } else {
+			    	for (var i = 0; i <= arrMinuman.length; i++){
+			    		if (arrMinuman.includes(tempMnm)){
+			    			for (var j = 0; j <= arrMinuman.length; j++){
+			    				if (arrMinuman[j] == ' Kopi V60'){
+					    			arrCountMnm[j] = countMnm8;
+					    			formJumlahMnm.value = arrCountMnm;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMinuman.push(tempMnm);
+			    			arrCountMnm.push(countMnm8);
+			    		}
+			    	}
+			    	formMinuman.value = arrMinuman;
+			    	formJumlahMnm.value = arrCountMnm;
+			    }
 			});
-			document.getElementById("minuman-9").addEventListener('click', function () {
-			    var formMakanan = document.getElementById('minuman');
-			    formMakanan.value += 'Blue Late; ';
+			
+			document.getElementById("ms-mnm-8").addEventListener('click', function () {
+		    	countMnm8 -= 1;
+		    	document.getElementById("jml-mnm-8").innerHTML = countMnm8;
+		    	var formJumlahMnm = document.getElementById('jumlahMnm');
+		    	for (var i = 0; i <= arrMinuman.length; i++){
+		    		if (arrMinuman[i] == ' Kopi V60'){
+		    			arrCountMnm[i] = countMnm8;
+		    			formJumlahMnm.value = arrCountMnm;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 15000);
+		    });
+			
+			// MINUMAN 9
+			document.getElementById("ps-mnm-9").addEventListener('click', function () {
+			    var formMinuman = document.getElementById('minuman');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMnm = document.getElementById('jumlahMnm');
+			    formHarga.value = (hargatotal += 12000);
+			    countMnm9 += 1;
+			    
+			    document.getElementById("jml-mnm-9").innerHTML = countMnm9;
+			    
+			    tempMnm = ' Blue Late';
+		    	
+			    if (arrMinuman.length == 0){
+			    	arrCountMnm.push(countMnm9);
+			    	formJumlahMnm.value = arrCountMnm;
+			    	
+			    	arrMinuman.push(tempMnm);
+			    	formMinuman.value = arrMinuman[0];
+			    } else {
+			    	for (var i = 0; i <= arrMinuman.length; i++){
+			    		if (arrMinuman.includes(tempMnm)){
+			    			for (var j = 0; j <= arrMinuman.length; j++){
+			    				if (arrMinuman[j] == ' Blue Late'){
+					    			arrCountMnm[j] = countMnm9;
+					    			formJumlahMnm.value = arrCountMnm;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMinuman.push(tempMnm);
+			    			arrCountMnm.push(countMnm9);
+			    		}
+			    	}
+			    	formMinuman.value = arrMinuman;
+			    	formJumlahMnm.value = arrCountMnm;
+			    }
 			});
-			document.getElementById("minuman-10").addEventListener('click', function () {
-			    var formMakanan = document.getElementById('minuman');
-			    formMakanan.value += 'Coconut Latte; ';
+			
+			document.getElementById("ms-mnm-9").addEventListener('click', function () {
+		    	countMnm9 -= 1;
+		    	document.getElementById("jml-mnm-9").innerHTML = countMnm9;
+		    	var formJumlahMnm = document.getElementById('jumlahMnm');
+		    	for (var i = 0; i <= arrMinuman.length; i++){
+		    		if (arrMinuman[i] == ' Blue Late'){
+		    			arrCountMnm[i] = countMnm9;
+		    			formJumlahMnm.value = arrCountMnm;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 12000);
+		    });
+			
+			// MINUMAN 10
+			document.getElementById("ps-mnm-10").addEventListener('click', function () {
+			    var formMinuman = document.getElementById('minuman');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMnm = document.getElementById('jumlahMnm');
+			    formHarga.value = (hargatotal += 10000);
+			    countMnm10 += 1;
+			    
+			    document.getElementById("jml-mnm-10").innerHTML = countMnm10;
+			    
+			    tempMnm = ' Coconut Latte';
+		    	
+			    if (arrMinuman.length == 0){
+			    	arrCountMnm.push(countMnm10);
+			    	formJumlahMnm.value = arrCountMnm;
+			    	
+			    	arrMinuman.push(tempMnm);
+			    	formMinuman.value = arrMinuman[0];
+			    } else {
+			    	for (var i = 0; i <= arrMinuman.length; i++){
+			    		if (arrMinuman.includes(tempMnm)){
+			    			for (var j = 0; j <= arrMinuman.length; j++){
+			    				if (arrMinuman[j] == ' Coconut Latte'){
+					    			arrCountMnm[j] = countMnm10;
+					    			formJumlahMnm.value = arrCountMnm;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMinuman.push(tempMnm);
+			    			arrCountMnm.push(countMnm10);
+			    		}
+			    	}
+			    	formMinuman.value = arrMinuman;
+			    	formJumlahMnm.value = arrCountMnm;
+			    }
 			});
-			document.getElementById("minuman-11").addEventListener('click', function () {
-			    var formMakanan = document.getElementById('minuman');
-			    formMakanan.value += 'Matcha Late; ';
+			
+			document.getElementById("ms-mnm-10").addEventListener('click', function () {
+		    	countMnm10 -= 1;
+		    	document.getElementById("jml-mnm-10").innerHTML = countMnm10;
+		    	var formJumlahMnm = document.getElementById('jumlahMnm');
+		    	for (var i = 0; i <= arrMinuman.length; i++){
+		    		if (arrMinuman[i] == ' Coconut Latte'){
+		    			arrCountMnm[i] = countMnm10;
+		    			formJumlahMnm.value = arrCountMnm;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 10000);
+		    });
+			
+			// MINUMAN 11
+			document.getElementById("ps-mnm-11").addEventListener('click', function () {
+			    var formMinuman = document.getElementById('minuman');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMnm = document.getElementById('jumlahMnm');
+			    formHarga.value = (hargatotal += 12000);
+			    countMnm11 += 1;
+			    
+			    document.getElementById("jml-mnm-11").innerHTML = countMnm11;
+			    
+			    tempMnm = ' Matcha Late';
+		    	
+			    if (arrMinuman.length == 0){
+			    	arrCountMnm.push(countMnm11);
+			    	formJumlahMnm.value = arrCountMnm;
+			    	
+			    	arrMinuman.push(tempMnm);
+			    	formMinuman.value = arrMinuman[0];
+			    } else {
+			    	for (var i = 0; i <= arrMinuman.length; i++){
+			    		if (arrMinuman.includes(tempMnm)){
+			    			for (var j = 0; j <= arrMinuman.length; j++){
+			    				if (arrMinuman[j] == ' Matcha Late'){
+					    			arrCountMnm[j] = countMnm11;
+					    			formJumlahMnm.value = arrCountMnm;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMinuman.push(tempMnm);
+			    			arrCountMnm.push(countMnm11);
+			    		}
+			    	}
+			    	formMinuman.value = arrMinuman;
+			    	formJumlahMnm.value = arrCountMnm;
+			    }
 			});
-			document.getElementById("minuman-12").addEventListener('click', function () {
-			    var formMakanan = document.getElementById('minuman');
-			    formMakanan.value += 'Chocolate; ';
+			
+			document.getElementById("ms-mnm-11").addEventListener('click', function () {
+		    	countMnm11 -= 1;
+		    	document.getElementById("jml-mnm-11").innerHTML = countMnm11;
+		    	var formJumlahMnm = document.getElementById('jumlahMnm');
+		    	for (var i = 0; i <= arrMinuman.length; i++){
+		    		if (arrMinuman[i] == ' Matcha Late'){
+		    			arrCountMnm[i] = countMnm11;
+		    			formJumlahMnm.value = arrCountMnm;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 12000);
+		    });
+			
+			// MINUMAN 12
+			document.getElementById("ps-mnm-12").addEventListener('click', function () {
+			    var formMinuman = document.getElementById('minuman');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMnm = document.getElementById('jumlahMnm');
+			    formHarga.value = (hargatotal += 8000);
+			    countMnm12 += 1;
+			    
+			    document.getElementById("jml-mnm-12").innerHTML = countMnm12;
+			    
+			    tempMnm = ' Chocolate';
+		    	
+			    if (arrMinuman.length == 0){
+			    	arrCountMnm.push(countMnm12);
+			    	formJumlahMnm.value = arrCountMnm;
+			    	
+			    	arrMinuman.push(tempMnm);
+			    	formMinuman.value = arrMinuman[0];
+			    } else {
+			    	for (var i = 0; i <= arrMinuman.length; i++){
+			    		if (arrMinuman.includes(tempMnm)){
+			    			for (var j = 0; j <= arrMinuman.length; j++){
+			    				if (arrMinuman[j] == ' Chocolate'){
+					    			arrCountMnm[j] = countMnm12;
+					    			formJumlahMnm.value = arrCountMnm;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMinuman.push(tempMnm);
+			    			arrCountMnm.push(countMnm12);
+			    		}
+			    	}
+			    	formMinuman.value = arrMinuman;
+			    	formJumlahMnm.value = arrCountMnm;
+			    }
 			});
-			document.getElementById("minuman-13").addEventListener('click', function () {
-			    var formMakanan = document.getElementById('minuman');
-			    formMakanan.value += 'Lemon Tea; ';
+			
+			document.getElementById("ms-mnm-12").addEventListener('click', function () {
+		    	countMnm12 -= 1;
+		    	document.getElementById("jml-mnm-12").innerHTML = countMnm12;
+		    	var formJumlahMnm = document.getElementById('jumlahMnm');
+		    	for (var i = 0; i <= arrMinuman.length; i++){
+		    		if (arrMinuman[i] == ' Chocolate'){
+		    			arrCountMnm[i] = countMnm12;
+		    			formJumlahMnm.value = arrCountMnm;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 8000);
+		    });
+			
+			// MINUMAN 13
+			document.getElementById("ps-mnm-13").addEventListener('click', function () {
+			    var formMinuman = document.getElementById('minuman');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMnm = document.getElementById('jumlahMnm');
+			    formHarga.value = (hargatotal += 7000);
+			    countMnm13 += 1;
+			    
+			    document.getElementById("jml-mnm-13").innerHTML = countMnm13;
+			    
+			    tempMnm = ' Lemon Tea';
+		    	
+			    if (arrMinuman.length == 0){
+			    	arrCountMnm.push(countMnm13);
+			    	formJumlahMnm.value = arrCountMnm;
+			    	
+			    	arrMinuman.push(tempMnm);
+			    	formMinuman.value = arrMinuman[0];
+			    } else {
+			    	for (var i = 0; i <= arrMinuman.length; i++){
+			    		if (arrMinuman.includes(tempMnm)){
+			    			for (var j = 0; j <= arrMinuman.length; j++){
+			    				if (arrMinuman[j] == ' Lemon Tea'){
+					    			arrCountMnm[j] = countMnm13;
+					    			formJumlahMnm.value = arrCountMnm;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMinuman.push(tempMnm);
+			    			arrCountMnm.push(countMnm13);
+			    		}
+			    	}
+			    	formMinuman.value = arrMinuman;
+			    	formJumlahMnm.value = arrCountMnm;
+			    }
 			});
-			document.getElementById("minuman-14").addEventListener('click', function () {
-			    var formMakanan = document.getElementById('minuman');
-			    formMakanan.value += 'Orange Juice; ';
+			
+			document.getElementById("ms-mnm-13").addEventListener('click', function () {
+		    	countMnm13 -= 1;
+		    	document.getElementById("jml-mnm-13").innerHTML = countMnm13;
+		    	var formJumlahMnm = document.getElementById('jumlahMnm');
+		    	for (var i = 0; i <= arrMinuman.length; i++){
+		    		if (arrMinuman[i] == ' Lemon Tea'){
+		    			arrCountMnm[i] = countMnm13;
+		    			formJumlahMnm.value = arrCountMnm;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 7000);
+		    });
+			
+			// MINUMAN 14
+			document.getElementById("ps-mnm-14").addEventListener('click', function () {
+			    var formMinuman = document.getElementById('minuman');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMnm = document.getElementById('jumlahMnm');
+			    formHarga.value = (hargatotal += 10000);
+			    countMnm14 += 1;
+			    
+			    document.getElementById("jml-mnm-14").innerHTML = countMnm14;
+			    
+			    tempMnm = ' Orange Juice';
+		    	
+			    if (arrMinuman.length == 0){
+			    	arrCountMnm.push(countMnm14);
+			    	formJumlahMnm.value = arrCountMnm;
+			    	
+			    	arrMinuman.push(tempMnm);
+			    	formMinuman.value = arrMinuman[0];
+			    } else {
+			    	for (var i = 0; i <= arrMinuman.length; i++){
+			    		if (arrMinuman.includes(tempMnm)){
+			    			for (var j = 0; j <= arrMinuman.length; j++){
+			    				if (arrMinuman[j] == ' Orange Juice'){
+					    			arrCountMnm[j] = countMnm14;
+					    			formJumlahMnm.value = arrCountMnm;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMinuman.push(tempMnm);
+			    			arrCountMnm.push(countMnm14);
+			    		}
+			    	}
+			    	formMinuman.value = arrMinuman;
+			    	formJumlahMnm.value = arrCountMnm;
+			    }
 			});
-			document.getElementById("minuman-15").addEventListener('click', function () {
-			    var formMakanan = document.getElementById('minuman');
-			    formMakanan.value += 'Mineral Water; ';
+			
+			document.getElementById("ms-mnm-14").addEventListener('click', function () {
+		    	countMnm14 -= 1;
+		    	document.getElementById("jml-mnm-14").innerHTML = countMnm14;
+		    	var formJumlahMnm = document.getElementById('jumlahMnm');
+		    	for (var i = 0; i <= arrMinuman.length; i++){
+		    		if (arrMinuman[i] == ' Orange Juice'){
+		    			arrCountMnm[i] = countMnm14;
+		    			formJumlahMnm.value = arrCountMnm;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 10000);
+		    });
+			
+			// MINUMAN 15
+			document.getElementById("ps-mnm-15").addEventListener('click', function () {
+			    var formMinuman = document.getElementById('minuman');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMnm = document.getElementById('jumlahMnm');
+			    formHarga.value = (hargatotal += 3000);
+			    countMnm15 += 1;
+			    
+			    document.getElementById("jml-mnm-15").innerHTML = countMnm15;
+			    
+			    tempMnm = ' Mineral Water';
+		    	
+			    if (arrMinuman.length == 0){
+			    	arrCountMnm.push(countMnm15);
+			    	formJumlahMnm.value = arrCountMnm;
+			    	
+			    	arrMinuman.push(tempMnm);
+			    	formMinuman.value = arrMinuman[0];
+			    } else {
+			    	for (var i = 0; i <= arrMinuman.length; i++){
+			    		if (arrMinuman.includes(tempMnm)){
+			    			for (var j = 0; j <= arrMinuman.length; j++){
+			    				if (arrMinuman[j] == ' Mineral Water'){
+					    			arrCountMnm[j] = countMnm15;
+					    			formJumlahMnm.value = arrCountMnm;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMinuman.push(tempMnm);
+			    			arrCountMnm.push(countMnm15);
+			    		}
+			    	}
+			    	formMinuman.value = arrMinuman;
+			    	formJumlahMnm.value = arrCountMnm;
+			    }
 			});
+			
+			document.getElementById("ms-mnm-15").addEventListener('click', function () {
+		    	countMnm15 -= 1;
+		    	document.getElementById("jml-mnm-15").innerHTML = countMnm15;
+		    	var formJumlahMnm = document.getElementById('jumlahMnm');
+		    	for (var i = 0; i <= arrMinuman.length; i++){
+		    		if (arrMinuman[i] == ' Mineral Water'){
+		    			arrCountMnm[i] = countMnm15;
+		    			formJumlahMnm.value = arrCountMnm;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 3000);
+		    });
 			
 		</script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
