@@ -546,8 +546,12 @@
 		<script>
 			// Makanan
 			var hargatotal = 0;
-			var countMkn1 = 0, countMkn2 = 0, countMkn3 = 0;
-			var countMnm1 = 0, countMnm2 = 0, countMnm3 = 0, countMnm4 = 0, countMnm5 = 0, countMnm6 = 0, countMnm7 = 0, countMnm8 = 0, countMnm9 = 0, countMnm10 = 0, countMnm11 = 0, countMnm12 = 0, countMnm13 = 0, countMnm14 = 0, countMnm15 = 0;
+			var countMkn1 = 0, countMkn2 = 0, countMkn3 = 0, countMkn4 = 0, countMkn5 = 0;
+            var countMkn6 = 0, countMkn7 = 0, countMkn8 = 0, countMkn9 = 0, countMkn10 = 0;
+            var countMkn11 = 0, countMkn12 = 0, countMkn13 = 0, countMkn14 = 0, countMkn15 = 0;
+			var countMnm1 = 0, countMnm2 = 0, countMnm3 = 0, countMnm4 = 0, countMnm5 = 0;
+			var countMnm6 = 0, countMnm7 = 0, countMnm8 = 0, countMnm9 = 0, countMnm10 = 0;
+			var countMnm11 = 0, countMnm12 = 0, countMnm13 = 0, countMnm14 = 0, countMnm15 = 0;
 			var tempMkn = '';
 			var tempMnm = '';
 			const arrMakanan = [];
@@ -703,56 +707,587 @@
 		    	var formHarga = document.getElementById('harga');
 			    formHarga.value = (hargatotal -= 12000);
 		    });
-			
-			// MAKANAN 4
+
+            // MAKANAN 4
 			document.getElementById("ps-mkn-4").addEventListener('click', function () {
 			    var formMakanan = document.getElementById('makanan');
-			    formMakanan.value += 'Sapi Lada Hitam; ';
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMkn = document.getElementById('jumlahMkn');
+			    formHarga.value = (hargatotal += 22000);
+			    countMkn4 += 1;
+			    document.getElementById("jml-mkn-4").innerHTML = countMkn4;
+			    tempMkn = ' Sapi Lada Hitam';
+			    if (arrMakanan.length == 0){
+			    	arrCountMkn.push(countMkn4);
+			    	formJumlahMkn.value = arrCountMkn;
+			    	arrMakanan.push(tempMkn);
+			    	formMakanan.value = arrMakanan[0];
+			    } else {
+			    	for (var i = 0; i <= arrMakanan.length; i++){
+			    		if (arrMakanan.includes(tempMkn)){
+			    			for (var j = 0; j <= arrMakanan.length; j++){
+			    				if (arrMakanan[j] == ' Sapi Lada Hitam'){
+					    			arrCountMkn[j] = countMkn4;
+					    			formJumlahMkn.value = arrCountMkn;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMakanan.push(tempMkn);
+			    			arrCountMkn.push(countMkn4);
+			    		}
+			    	}
+			    	formMakanan.value = arrMakanan;
+			    	formJumlahMkn.value = arrCountMkn;
+			    }
 			});
+			
+			document.getElementById("ms-mkn-4").addEventListener('click', function () {
+		    	countMkn4 -= 1;
+		    	document.getElementById("jml-mkn-4").innerHTML = countMkn4;
+		    	var formJumlahMkn = document.getElementById('jumlahMkn');
+		    	for (var i = 0; i <= arrMakanan.length; i++){
+		    		if (arrMakanan[i] == ' Sapi Lada Hitam'){
+		    			arrCountMkn[i] = countMkn4;
+		    			formJumlahMkn.value = arrCountMkn;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 22000);
+		    });
+
+            // MAKANAN 5
 			document.getElementById("ps-mkn-5").addEventListener('click', function () {
 			    var formMakanan = document.getElementById('makanan');
-			    formMakanan.value += 'Sapi Gongso; ';
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMkn = document.getElementById('jumlahMkn');
+			    formHarga.value = (hargatotal += 24000);
+			    countMkn5 += 1;
+			    document.getElementById("jml-mkn-5").innerHTML = countMkn5;
+			    tempMkn = ' Sapi Gongso';
+			    if (arrMakanan.length == 0){
+			    	arrCountMkn.push(countMkn5);
+			    	formJumlahMkn.value = arrCountMkn;
+			    	arrMakanan.push(tempMkn);
+			    	formMakanan.value = arrMakanan[0];
+			    } else {
+			    	for (var i = 0; i <= arrMakanan.length; i++){
+			    		if (arrMakanan.includes(tempMkn)){
+			    			for (var j = 0; j <= arrMakanan.length; j++){
+			    				if (arrMakanan[j] == ' Sapi Gongso'){
+					    			arrCountMkn[j] = countMkn5;
+					    			formJumlahMkn.value = arrCountMkn;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMakanan.push(tempMkn);
+			    			arrCountMkn.push(countMkn5);
+			    		}
+			    	}
+			    	formMakanan.value = arrMakanan;
+			    	formJumlahMkn.value = arrCountMkn;
+			    }
 			});
+			
+			document.getElementById("ms-mkn-5").addEventListener('click', function () {
+		    	countMkn5 -= 1;
+		    	document.getElementById("jml-mkn-5").innerHTML = countMkn5;
+		    	var formJumlahMkn = document.getElementById('jumlahMkn');
+		    	for (var i = 0; i <= arrMakanan.length; i++){
+		    		if (arrMakanan[i] == ' Sapi Gongso'){
+		    			arrCountMkn[i] = countMkn5;
+		    			formJumlahMkn.value = arrCountMkn;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 24000);
+		    });
+
+            // MAKANAN 6
 			document.getElementById("ps-mkn-6").addEventListener('click', function () {
 			    var formMakanan = document.getElementById('makanan');
-			    formMakanan.value += 'Sapi Sayur Asem; ';
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMkn = document.getElementById('jumlahMkn');
+			    formHarga.value = (hargatotal += 20000);
+			    countMkn6 += 1;
+			    document.getElementById("jml-mkn-6").innerHTML = countMkn6;
+			    tempMkn = ' Sapi Sayur Asem';
+			    if (arrMakanan.length == 0){
+			    	arrCountMkn.push(countMkn6);
+			    	formJumlahMkn.value = arrCountMkn;
+			    	arrMakanan.push(tempMkn);
+			    	formMakanan.value = arrMakanan[0];
+			    } else {
+			    	for (var i = 0; i <= arrMakanan.length; i++){
+			    		if (arrMakanan.includes(tempMkn)){
+			    			for (var j = 0; j <= arrMakanan.length; j++){
+			    				if (arrMakanan[j] == ' Sapi Sayur Asem'){
+					    			arrCountMkn[j] = countMkn6;
+					    			formJumlahMkn.value = arrCountMkn;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMakanan.push(tempMkn);
+			    			arrCountMkn.push(countMkn6);
+			    		}
+			    	}
+			    	formMakanan.value = arrMakanan;
+			    	formJumlahMkn.value = arrCountMkn;
+			    }
 			});
+			
+			document.getElementById("ms-mkn-6").addEventListener('click', function () {
+		    	countMkn6 -= 1;
+		    	document.getElementById("jml-mkn-6").innerHTML = countMkn6;
+		    	var formJumlahMkn = document.getElementById('jumlahMkn');
+		    	for (var i = 0; i <= arrMakanan.length; i++){
+		    		if (arrMakanan[i] == ' Sapi Sayur Asem'){
+		    			arrCountMkn[i] = countMkn6;
+		    			formJumlahMkn.value = arrCountMkn;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 20000);
+		    });
+
+            // MAKANAN 7
 			document.getElementById("ps-mkn-7").addEventListener('click', function () {
 			    var formMakanan = document.getElementById('makanan');
-			    formMakanan.value += 'Chicken Katsu; ';
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMkn = document.getElementById('jumlahMkn');
+			    formHarga.value = (hargatotal += 25000);
+			    countMkn7 += 1;
+			    document.getElementById("jml-mkn-7").innerHTML = countMkn7;
+			    tempMkn = ' Chicken Katsu';
+			    if (arrMakanan.length == 0){
+			    	arrCountMkn.push(countMkn7);
+			    	formJumlahMkn.value = arrCountMkn;
+			    	arrMakanan.push(tempMkn);
+			    	formMakanan.value = arrMakanan[0];
+			    } else {
+			    	for (var i = 0; i <= arrMakanan.length; i++){
+			    		if (arrMakanan.includes(tempMkn)){
+			    			for (var j = 0; j <= arrMakanan.length; j++){
+			    				if (arrMakanan[j] == ' Chicken Katsu'){
+					    			arrCountMkn[j] = countMkn7;
+					    			formJumlahMkn.value = arrCountMkn;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMakanan.push(tempMkn);
+			    			arrCountMkn.push(countMkn7);
+			    		}
+			    	}
+			    	formMakanan.value = arrMakanan;
+			    	formJumlahMkn.value = arrCountMkn;
+			    }
 			});
+			
+			document.getElementById("ms-mkn-7").addEventListener('click', function () {
+		    	countMkn7 -= 1;
+		    	document.getElementById("jml-mkn-7").innerHTML = countMkn7;
+		    	var formJumlahMkn = document.getElementById('jumlahMkn');
+		    	for (var i = 0; i <= arrMakanan.length; i++){
+		    		if (arrMakanan[i] == ' Chicken Katsu'){
+		    			arrCountMkn[i] = countMkn7;
+		    			formJumlahMkn.value = arrCountMkn;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 25000);
+		    });
+
+            // MAKANAN 8
 			document.getElementById("ps-mkn-8").addEventListener('click', function () {
 			    var formMakanan = document.getElementById('makanan');
-			    formMakanan.value += 'Nasi Goreng Ayam; ';
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMkn = document.getElementById('jumlahMkn');
+			    formHarga.value = (hargatotal += 14000);
+			    countMkn8 += 1;
+			    document.getElementById("jml-mkn-8").innerHTML = countMkn8;
+			    tempMkn = ' Nasi Goreng Ayam';
+			    if (arrMakanan.length == 0){
+			    	arrCountMkn.push(countMkn8);
+			    	formJumlahMkn.value = arrCountMkn;
+			    	arrMakanan.push(tempMkn);
+			    	formMakanan.value = arrMakanan[0];
+			    } else {
+			    	for (var i = 0; i <= arrMakanan.length; i++){
+			    		if (arrMakanan.includes(tempMkn)){
+			    			for (var j = 0; j <= arrMakanan.length; j++){
+			    				if (arrMakanan[j] == ' Nasi Goreng Ayam'){
+					    			arrCountMkn[j] = countMkn8;
+					    			formJumlahMkn.value = arrCountMkn;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMakanan.push(tempMkn);
+			    			arrCountMkn.push(countMkn8);
+			    		}
+			    	}
+			    	formMakanan.value = arrMakanan;
+			    	formJumlahMkn.value = arrCountMkn;
+			    }
 			});
+			
+			document.getElementById("ms-mkn-8").addEventListener('click', function () {
+		    	countMkn8 -= 1;
+		    	document.getElementById("jml-mkn-8").innerHTML = countMkn8;
+		    	var formJumlahMkn = document.getElementById('jumlahMkn');
+		    	for (var i = 0; i <= arrMakanan.length; i++){
+		    		if (arrMakanan[i] == ' Nasi Goreng Ayam'){
+		    			arrCountMkn[i] = countMkn8;
+		    			formJumlahMkn.value = arrCountMkn;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 14000);
+		    });
+
+            // MAKANAN 9
 			document.getElementById("ps-mkn-9").addEventListener('click', function () {
 			    var formMakanan = document.getElementById('makanan');
-			    formMakanan.value += 'Mie Goreng Ayam; ';
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMkn = document.getElementById('jumlahMkn');
+			    formHarga.value = (hargatotal += 14000);
+			    countMkn9 += 1;
+			    document.getElementById("jml-mkn-9").innerHTML = countMkn9;
+			    tempMkn = ' Mie Goreng Ayam';
+			    if (arrMakanan.length == 0){
+			    	arrCountMkn.push(countMkn9);
+			    	formJumlahMkn.value = arrCountMkn;
+			    	arrMakanan.push(tempMkn);
+			    	formMakanan.value = arrMakanan[0];
+			    } else {
+			    	for (var i = 0; i <= arrMakanan.length; i++){
+			    		if (arrMakanan.includes(tempMkn)){
+			    			for (var j = 0; j <= arrMakanan.length; j++){
+			    				if (arrMakanan[j] == ' Mie Goreng Ayam'){
+					    			arrCountMkn[j] = countMkn9;
+					    			formJumlahMkn.value = arrCountMkn;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMakanan.push(tempMkn);
+			    			arrCountMkn.push(countMkn9);
+			    		}
+			    	}
+			    	formMakanan.value = arrMakanan;
+			    	formJumlahMkn.value = arrCountMkn;
+			    }
 			});
+			
+			document.getElementById("ms-mkn-9").addEventListener('click', function () {
+		    	countMkn9 -= 1;
+		    	document.getElementById("jml-mkn-9").innerHTML = countMkn9;
+		    	var formJumlahMkn = document.getElementById('jumlahMkn');
+		    	for (var i = 0; i <= arrMakanan.length; i++){
+		    		if (arrMakanan[i] == ' Mie Goreng Ayam'){
+		    			arrCountMkn[i] = countMkn9;
+		    			formJumlahMkn.value = arrCountMkn;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 14000);
+		    });
+
+            // MAKANAN 10
 			document.getElementById("ps-mkn-10").addEventListener('click', function () {
 			    var formMakanan = document.getElementById('makanan');
-			    formMakanan.value += 'Steak Iga Sapi; ';
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMkn = document.getElementById('jumlahMkn');
+			    formHarga.value = (hargatotal += 30000);
+			    countMkn10 += 1;
+			    document.getElementById("jml-mkn-10").innerHTML = countMkn10;
+			    tempMkn = ' Steak Iga Sapi';
+			    if (arrMakanan.length == 0){
+			    	arrCountMkn.push(countMkn10);
+			    	formJumlahMkn.value = arrCountMkn;
+			    	arrMakanan.push(tempMkn);
+			    	formMakanan.value = arrMakanan[0];
+			    } else {
+			    	for (var i = 0; i <= arrMakanan.length; i++){
+			    		if (arrMakanan.includes(tempMkn)){
+			    			for (var j = 0; j <= arrMakanan.length; j++){
+			    				if (arrMakanan[j] == ' Steak Iga Sapi'){
+					    			arrCountMkn[j] = countMkn10;
+					    			formJumlahMkn.value = arrCountMkn;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMakanan.push(tempMkn);
+			    			arrCountMkn.push(countMkn10);
+			    		}
+			    	}
+			    	formMakanan.value = arrMakanan;
+			    	formJumlahMkn.value = arrCountMkn;
+			    }
 			});
+			
+			document.getElementById("ms-mkn-10").addEventListener('click', function () {
+		    	countMkn10 -= 1;
+		    	document.getElementById("jml-mkn-10").innerHTML = countMkn10;
+		    	var formJumlahMkn = document.getElementById('jumlahMkn');
+		    	for (var i = 0; i <= arrMakanan.length; i++){
+		    		if (arrMakanan[i] == ' Steak Iga Sapi'){
+		    			arrCountMkn[i] = countMkn10;
+		    			formJumlahMkn.value = arrCountMkn;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 30000);
+		    });
+
+            // MAKANAN 11
 			document.getElementById("ps-mkn-11").addEventListener('click', function () {
 			    var formMakanan = document.getElementById('makanan');
-			    formMakanan.value += 'Siomay; ';
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMkn = document.getElementById('jumlahMkn');
+			    formHarga.value = (hargatotal += 8000);
+			    countMkn11 += 1;
+			    document.getElementById("jml-mkn-11").innerHTML = countMkn11;
+			    tempMkn = ' Siomay';
+			    if (arrMakanan.length == 0){
+			    	arrCountMkn.push(countMkn11);
+			    	formJumlahMkn.value = arrCountMkn;
+			    	arrMakanan.push(tempMkn);
+			    	formMakanan.value = arrMakanan[0];
+			    } else {
+			    	for (var i = 0; i <= arrMakanan.length; i++){
+			    		if (arrMakanan.includes(tempMkn)){
+			    			for (var j = 0; j <= arrMakanan.length; j++){
+			    				if (arrMakanan[j] == ' Siomay'){
+					    			arrCountMkn[j] = countMkn11;
+					    			formJumlahMkn.value = arrCountMkn;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMakanan.push(tempMkn);
+			    			arrCountMkn.push(countMkn11);
+			    		}
+			    	}
+			    	formMakanan.value = arrMakanan;
+			    	formJumlahMkn.value = arrCountMkn;
+			    }
 			});
+			
+			document.getElementById("ms-mkn-11").addEventListener('click', function () {
+		    	countMkn11 -= 1;
+		    	document.getElementById("jml-mkn-11").innerHTML = countMkn11;
+		    	var formJumlahMkn = document.getElementById('jumlahMkn');
+		    	for (var i = 0; i <= arrMakanan.length; i++){
+		    		if (arrMakanan[i] == ' Siomay'){
+		    			arrCountMkn[i] = countMkn11;
+		    			formJumlahMkn.value = arrCountMkn;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 8000);
+		    });
+
+            // MAKANAN 12
 			document.getElementById("ps-mkn-12").addEventListener('click', function () {
 			    var formMakanan = document.getElementById('makanan');
-			    formMakanan.value += 'Batagor; ';
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMkn = document.getElementById('jumlahMkn');
+			    formHarga.value = (hargatotal += 10000);
+			    countMkn12 += 1;
+			    document.getElementById("jml-mkn-12").innerHTML = countMkn12;
+			    tempMkn = ' Batagor';
+			    if (arrMakanan.length == 0){
+			    	arrCountMkn.push(countMkn12);
+			    	formJumlahMkn.value = arrCountMkn;
+			    	arrMakanan.push(tempMkn);
+			    	formMakanan.value = arrMakanan[0];
+			    } else {
+			    	for (var i = 0; i <= arrMakanan.length; i++){
+			    		if (arrMakanan.includes(tempMkn)){
+			    			for (var j = 0; j <= arrMakanan.length; j++){
+			    				if (arrMakanan[j] == ' Batagor'){
+					    			arrCountMkn[j] = countMkn12;
+					    			formJumlahMkn.value = arrCountMkn;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMakanan.push(tempMkn);
+			    			arrCountMkn.push(countMkn12);
+			    		}
+			    	}
+			    	formMakanan.value = arrMakanan;
+			    	formJumlahMkn.value = arrCountMkn;
+			    }
 			});
+			
+			document.getElementById("ms-mkn-12").addEventListener('click', function () {
+		    	countMkn12 -= 1;
+		    	document.getElementById("jml-mkn-12").innerHTML = countMkn12;
+		    	var formJumlahMkn = document.getElementById('jumlahMkn');
+		    	for (var i = 0; i <= arrMakanan.length; i++){
+		    		if (arrMakanan[i] == ' Batagor'){
+		    			arrCountMkn[i] = countMkn12;
+		    			formJumlahMkn.value = arrCountMkn;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 10000);
+		    });
+
+            // MAKANAN 13
 			document.getElementById("ps-mkn-13").addEventListener('click', function () {
 			    var formMakanan = document.getElementById('makanan');
-			    formMakanan.value += 'Roti Bakar Keju; ';
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMkn = document.getElementById('jumlahMkn');
+			    formHarga.value = (hargatotal += 7000);
+			    countMkn13 += 1;
+			    document.getElementById("jml-mkn-13").innerHTML = countMkn13;
+			    tempMkn = ' Roti Bakar Keju';
+			    if (arrMakanan.length == 0){
+			    	arrCountMkn.push(countMkn13);
+			    	formJumlahMkn.value = arrCountMkn;
+			    	arrMakanan.push(tempMkn);
+			    	formMakanan.value = arrMakanan[0];
+			    } else {
+			    	for (var i = 0; i <= arrMakanan.length; i++){
+			    		if (arrMakanan.includes(tempMkn)){
+			    			for (var j = 0; j <= arrMakanan.length; j++){
+			    				if (arrMakanan[j] == ' Roti Bakar Keju'){
+					    			arrCountMkn[j] = countMkn13;
+					    			formJumlahMkn.value = arrCountMkn;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMakanan.push(tempMkn);
+			    			arrCountMkn.push(countMkn13);
+			    		}
+			    	}
+			    	formMakanan.value = arrMakanan;
+			    	formJumlahMkn.value = arrCountMkn;
+			    }
 			});
+			
+			document.getElementById("ms-mkn-13").addEventListener('click', function () {
+		    	countMkn13 -= 1;
+		    	document.getElementById("jml-mkn-13").innerHTML = countMkn13;
+		    	var formJumlahMkn = document.getElementById('jumlahMkn');
+		    	for (var i = 0; i <= arrMakanan.length; i++){
+		    		if (arrMakanan[i] == ' Roti Bakar Keju'){
+		    			arrCountMkn[i] = countMkn13;
+		    			formJumlahMkn.value = arrCountMkn;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 7000);
+		    });
+
+            // MAKANAN 14
 			document.getElementById("ps-mkn-14").addEventListener('click', function () {
 			    var formMakanan = document.getElementById('makanan');
-			    formMakanan.value += 'Kentang Goreng; ';
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMkn = document.getElementById('jumlahMkn');
+			    formHarga.value = (hargatotal += 10000);
+			    countMkn14 += 1;
+			    document.getElementById("jml-mkn-14").innerHTML = countMkn14;
+			    tempMkn = ' Kentang Goreng';
+			    if (arrMakanan.length == 0){
+			    	arrCountMkn.push(countMkn14);
+			    	formJumlahMkn.value = arrCountMkn;
+			    	arrMakanan.push(tempMkn);
+			    	formMakanan.value = arrMakanan[0];
+			    } else {
+			    	for (var i = 0; i <= arrMakanan.length; i++){
+			    		if (arrMakanan.includes(tempMkn)){
+			    			for (var j = 0; j <= arrMakanan.length; j++){
+			    				if (arrMakanan[j] == ' Kentang Goreng'){
+					    			arrCountMkn[j] = countMkn14;
+					    			formJumlahMkn.value = arrCountMkn;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMakanan.push(tempMkn);
+			    			arrCountMkn.push(countMkn14);
+			    		}
+			    	}
+			    	formMakanan.value = arrMakanan;
+			    	formJumlahMkn.value = arrCountMkn;
+			    }
 			});
+			
+			document.getElementById("ms-mkn-14").addEventListener('click', function () {
+		    	countMkn14 -= 1;
+		    	document.getElementById("jml-mkn-14").innerHTML = countMkn14;
+		    	var formJumlahMkn = document.getElementById('jumlahMkn');
+		    	for (var i = 0; i <= arrMakanan.length; i++){
+		    		if (arrMakanan[i] == ' Kentang Goreng'){
+		    			arrCountMkn[i] = countMkn14;
+		    			formJumlahMkn.value = arrCountMkn;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 10000);
+		    });
+
 			document.getElementById("ps-mkn-15").addEventListener('click', function () {
 			    var formMakanan = document.getElementById('makanan');
 			    formMakanan.value += 'Singkong Goreng; ';
 			});
+
+            // MAKANAN 15
+			document.getElementById("ps-mkn-15").addEventListener('click', function () {
+			    var formMakanan = document.getElementById('makanan');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMkn = document.getElementById('jumlahMkn');
+			    formHarga.value = (hargatotal += 8000);
+			    countMkn15 += 1;
+			    document.getElementById("jml-mkn-15").innerHTML = countMkn15;
+			    tempMkn = ' Singkong Goreng';
+			    if (arrMakanan.length == 0){
+			    	arrCountMkn.push(countMkn15);
+			    	formJumlahMkn.value = arrCountMkn;
+			    	arrMakanan.push(tempMkn);
+			    	formMakanan.value = arrMakanan[0];
+			    } else {
+			    	for (var i = 0; i <= arrMakanan.length; i++){
+			    		if (arrMakanan.includes(tempMkn)){
+			    			for (var j = 0; j <= arrMakanan.length; j++){
+			    				if (arrMakanan[j] == ' Singkong Goreng'){
+					    			arrCountMkn[j] = countMkn15;
+					    			formJumlahMkn.value = arrCountMkn;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMakanan.push(tempMkn);
+			    			arrCountMkn.push(countMkn15);
+			    		}
+			    	}
+			    	formMakanan.value = arrMakanan;
+			    	formJumlahMkn.value = arrCountMkn;
+			    }
+			});
+			
+			document.getElementById("ms-mkn-15").addEventListener('click', function () {
+		    	countMkn15 -= 1;
+		    	document.getElementById("jml-mkn-15").innerHTML = countMkn15;
+		    	var formJumlahMkn = document.getElementById('jumlahMkn');
+		    	for (var i = 0; i <= arrMakanan.length; i++){
+		    		if (arrMakanan[i] == ' Singkong Goreng'){
+		    			arrCountMkn[i] = countMkn15;
+		    			formJumlahMkn.value = arrCountMkn;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 8000);
+		    });
 
 		// MINUMAN
 			// MINUMAN 1
