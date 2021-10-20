@@ -528,8 +528,12 @@
 			    } else {
 			    	for (var i = 0; i <= temp.length; i++){
 			    		if (temp.includes(tempo)){
-			    			// do nothing
-			    			arrJumlah[i] = countmakanan1;
+			    			for (var j = 0; j <= temp.length; j++){
+			    				if (temp[j] == ' Ayam Kampung Goreng'){
+					    			arrJumlah[j] = countmakanan1;
+					    			jumlah.value = arrJumlah;
+					    		}
+			    			}
 			    			break;
 			    		} else {
 			    			temp.push(tempo);
@@ -542,12 +546,12 @@
 			});
 			
 			document.getElementById("minjumlahmakanan2").addEventListener('click', function () {
-		    	countmakanan1 -= 1;
+		    	countmakanan2 -= 1;
 		    	document.getElementById("jumlahmakanan2").innerHTML = countmakanan2;
 		    	var jumlah = document.getElementById('jumlahMkn');
 		    	for (var i = 0; i <= temp.length; i++){
-		    		if (temp[i] == ' Ayam Kampung Bakar'){
-		    			arrJumlah[i] = countmakanan1;
+		    		if (temp[i] == ' Ayam Kampung Goreng'){
+		    			arrJumlah[i] = countmakanan2;
 		    			jumlah.value = arrJumlah;
 		    		}
 		    	}
@@ -573,8 +577,12 @@
 			    } else {
 			    	for (var i = 0; i <= temp.length; i++){
 			    		if (temp.includes(tempo)){
-			    			// do nothing
-			    			arrJumlah[i] = countmakanan2;
+			    			for (var j = 0; j <= temp.length; j++){
+			    				if (temp[j] == ' Ayam Kampung Bakar'){
+					    			arrJumlah[j] = countmakanan2;
+					    			jumlah.value = arrJumlah;
+					    		}
+			    			}
 			    			break;
 			    		} else {
 			    			temp.push(tempo);
@@ -586,9 +594,21 @@
 			    }
 			});
 			
+			
+			
+			
+			
+			
 			document.getElementById("minjumlahmakanan3").addEventListener('click', function () {
-		    	countmakanan1 -= 1;
-		    	document.getElementById("jumlahmakanan3").innerHTML = countmakanan2;
+		    	countmakanan3 -= 1;
+		    	document.getElementById("jumlahmakanan3").innerHTML = countmakanan3;
+		    	var jumlah = document.getElementById('jumlahMkn');
+		    	for (var i = 0; i <= temp.length; i++){
+		    		if (temp[i] == ' Ayam Mentega'){
+		    			arrJumlah[i] = countmakanan3;
+		    			jumlah.value = arrJumlah;
+		    		}
+		    	}
 		    	var harga = document.getElementById('harga');
 			    harga.value = (hargatotal -= 12000);
 		    });
@@ -596,26 +616,35 @@
 			document.getElementById("makanan-3").addEventListener('click', function () {
 			    var text = document.getElementById('makanan');
 			    var harga = document.getElementById('harga');
+			    var jumlah = document.getElementById('jumlahMkn');
 			    harga.value = (hargatotal += 12000);
 			    countmakanan3 += 1;
-			    
 			    document.getElementById("jumlahmakanan3").innerHTML = countmakanan3;
-
+			    
 			    tempo = ' Ayam Mentega';
 		    	
 			    if (temp.length == 0){
+			    	arrJumlah.push(countmakanan3);
+			    	jumlah.value = arrJumlah;
 			    	temp.push(tempo);
 			    	text.value = temp[0];
 			    } else {
 			    	for (var i = 0; i <= temp.length; i++){
 			    		if (temp.includes(tempo)){
-			    			// do nothing
+			    			for (var j = 0; j <= temp.length; j++){
+			    				if (temp[j] == ' Ayam Mentega'){
+					    			arrJumlah[j] = countmakanan3;
+					    			jumlah.value = arrJumlah;
+					    		}
+			    			}
 			    			break;
 			    		} else {
 			    			temp.push(tempo);
+			    			arrJumlah.push(countmakanan3);
 			    		}
 			    	}
 			    	text.value = temp;
+			    	jumlah.value = arrJumlah;
 			    }
 			});
 			
