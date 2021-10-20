@@ -73,13 +73,13 @@
 											<fieldset class="form-group">
 												<label>Hargatotal</label> <input type="text"
 													value="<c:out value='${kedaikopi.hargatotal}' />" class="form-control"
-													name="harga" id="harga" required="required">
+													name="harga" id="harga">
 											</fieldset>
 											
 											<fieldset class="form-group">
 												<label>Makanan</label> <input type="text"
 													value="<c:out value='${kedaikopi.makanan}' />" class="form-control"
-													name="makanan" id="makanan" required="required">
+													name="makanan" id="makanan">
 											</fieldset>
 											
 											<fieldset class="form-group">
@@ -91,13 +91,13 @@
 											<fieldset class="form-group">
 												<label>Minuman</label> <input type="text"
 													value="<c:out value='${kedaikopi.minuman}' />" class="form-control"
-													name="minuman" id="minuman" required="required">
+													name="minuman" id="minuman">
 											</fieldset>
 							
 											<fieldset class="form-group">
-												<label>Jumlah Minuman</label> <input type="number"
+												<label>Jumlah Minuman</label> <input type="text"
 													value="<c:out value='${kedaikopi.jumlahMnm}' />" class="form-control"
-													name="jumlahMnm">
+													name="jumlahMnm" id="jumlahMnm">
 											</fieldset>
 											
 											<div class="py-3">
@@ -135,44 +135,35 @@
         </div>
         <!-- stop jumbotron -->
 
-        
-
         <!-- start menu -->
         <div class="container py-5" id="menu">
+            <!-- Makanan -->
             <div class="py-5">
                 <h3 class="py-3">Menu Makanan</h3>
                 <div class="row row-cols-1 row-cols-md-5 g-4">
-                
-                
-                
-                
                     <div class="col">
                         <div class="card">
                             <img src="images/img-2.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Ayam Kampung Goreng</h5>
                                 <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <p>Jumlah : <a id="jumlahmakanan1">0</a></p>
-                                <a href="#" class="btn btn-danger" id="makanan-1" onclick="return false;">Keranjang +</a>
-                                <a href="#" class="btn btn-dark" id="minjumlahmakanan1" onclick="return false;">-</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mkn-1">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mkn-1" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mkn-1" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
-                    
-                    
-                    
-                    
                     <div class="col">
                         <div class="card">
                             <img src="images/img-2.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Ayam Kampung Bakar</h5>
                                 <a>Rp 17.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <p>Jumlah : <a id="jumlahmakanan2">0</a></p>
-                                <a href="#" class="btn btn-danger" id="makanan-2" onclick="return false;">Keranjang +</a>
-                                <a href="#" class="btn btn-dark" id="minjumlahmakanan2" onclick="return false;">-</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mkn-2">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mkn-2" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mkn-2" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -182,10 +173,10 @@
                             <div class="card-body">
                                 <h5 class="card-title">Ayam Mentega</h5>
                                 <a>Rp 12.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <p>Jumlah : <a id="jumlahmakanan3">0</a></p>
-                                <a href="#" class="btn btn-danger" id="makanan-3" onclick="return false;">Keranjang +</a>
-                                <a href="#" class="btn btn-dark" id="minjumlahmakanan3" onclick="return false;">-</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mkn-3">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mkn-3" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mkn-3" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -194,9 +185,11 @@
                             <img src="images/img-2.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Sapi Lada Hitam</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="makanan-4">Keranjang +</a>
+                                <a>Rp 22.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mkn-4">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mkn-4" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mkn-4" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -205,9 +198,11 @@
                             <img src="images/img-2.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Sapi Gongso</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="makanan-5">Keranjang +</a>
+                                <a>Rp 24.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mkn-5">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mkn-5" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mkn-5" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -216,9 +211,11 @@
                             <img src="images/img-2.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Sapi Sayur Asem</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="makanan-6">Keranjang +</a>
+                                <a>Rp 20.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mkn-6">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mkn-6" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mkn-6" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -227,9 +224,11 @@
                             <img src="images/img-2.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Chicken Katsu</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="makanan-7">Keranjang +</a>
+                                <a>Rp 25.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mkn-7">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mkn-7" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mkn-7" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -238,9 +237,11 @@
                             <img src="images/img-2.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Nasi Goreng Ayam</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="makanan-8">Keranjang +</a>
+                                <a>Rp 14.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mkn-8">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mkn-8" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mkn-8" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -249,9 +250,11 @@
                             <img src="images/img-2.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Mie Goreng Ayam</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="makanan-9">Keranjang +</a>
+                                <a>Rp 14.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mkn-9">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mkn-9" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mkn-9" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -260,9 +263,11 @@
                             <img src="images/img-2.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Steak Iga Sapi</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="makanan-10">Keranjang +</a>
+                                <a>Rp 30.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mkn-10">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mkn-10" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mkn-10" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -271,9 +276,11 @@
                             <img src="images/img-2.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Siomay</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="makanan-11">Keranjang +</a>
+                                <a>Rp 8.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mkn-11">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mkn-11" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mkn-11" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -282,9 +289,11 @@
                             <img src="images/img-2.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Batagor</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="makanan-12">Keranjang +</a>
+                                <a>Rp 10.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mkn-12">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mkn-12" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mkn-12" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -293,9 +302,11 @@
                             <img src="images/img-2.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Roti Bakar Keju</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="makanan-13">Keranjang +</a>
+                                <a>Rp 7.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mkn-13">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mkn-13" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mkn-13" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -304,9 +315,11 @@
                             <img src="images/img-2.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Kentang Goreng</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="makanan-14">Keranjang +</a>
+                                <a>Rp 10.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mkn-14">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mkn-14" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mkn-14" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -315,14 +328,18 @@
                             <img src="images/img-2.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Singkong Goreng</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="makanan-15">Keranjang +</a>
+                                <a>Rp 8.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mkn-15">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mkn-15" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mkn-15" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Minuman -->
             <div class="py-5">
                 <h3 class="py-3">Menu Minuman</h3>
                 <div class="row row-cols-1 row-cols-md-5 g-4">
@@ -331,9 +348,11 @@
                             <img src="images/img-3.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Kopi Putih Mercury</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="minuman-1">Keranjang +</a>
+                                <a>Rp 8.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mnm-1">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mnm-1" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mnm-1" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -342,9 +361,11 @@
                             <img src="images/img-3.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Kopi Susu Mercury</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger"  id="minuman-2">Keranjang +</a>
+                                <a>Rp 10.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mnm-2">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mnm-2" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mnm-2" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -353,9 +374,11 @@
                             <img src="images/img-3.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Expresso</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="minuman-3">Keranjang +</a>
+                                <a>Rp 11.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mnm-3">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mnm-3" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mnm-3" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -364,9 +387,11 @@
                             <img src="images/img-3.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Americano</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="minuman-4">Keranjang +</a>
+                                <a>Rp 11.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mnm-4">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mnm-4" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mnm-4" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -375,9 +400,11 @@
                             <img src="images/img-3.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Cafe Latte</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="minuman-5">Keranjang +</a>
+                                <a>Rp 9.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mnm-5">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mnm-5" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mnm-5" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -386,9 +413,11 @@
                             <img src="images/img-3.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Cappuccino</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="minuman-6">Keranjang +</a>
+                                <a>Rp 10.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mnm-6">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mnm-6" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mnm-6" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -397,9 +426,11 @@
                             <img src="images/img-3.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Kopi Tubruk</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="minuman-7">Keranjang +</a>
+                                <a>Rp 6.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mnm-7">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mnm-7" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mnm-7" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -409,8 +440,10 @@
                             <div class="card-body">
                                 <h5 class="card-title">Kopi V60</h5>
                                 <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="minuman-8">Keranjang +</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mnm-8">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mnm-8" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mnm-8" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -419,9 +452,11 @@
                             <img src="images/img-3.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Blue Late</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="minuman-9">Keranjang +</a>
+                                <a>Rp 12.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mnm-9">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mnm-9" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mnm-9" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -430,9 +465,11 @@
                             <img src="images/img-3.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Coconut Latte</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="minuman-10">Keranjang +</a>
+                                <a>Rp 10.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mnm-10">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mnm-10" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mnm-10" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -441,9 +478,11 @@
                             <img src="images/img-3.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Matcha Late</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="minuman-11">Keranjang +</a>
+                                <a>Rp 12.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mnm-11">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mnm-11" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mnm-11" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -452,9 +491,11 @@
                             <img src="images/img-3.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Chocolate</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="minuman-12">Keranjang +</a>
+                                <a>Rp 8.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mnm-12">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mnm-12" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mnm-12" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -463,9 +504,11 @@
                             <img src="images/img-3.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Lemon Tea</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="minuman-13">Keranjang +</a>
+                                <a>Rp 7.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mnm-13">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mnm-13" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mnm-13" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -474,9 +517,11 @@
                             <img src="images/img-3.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Orange Juice</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="minuman-14">Keranjang +</a>
+                                <a>Rp 10.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mnm-14">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mnm-14" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mnm-14" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -485,9 +530,11 @@
                             <img src="images/img-3.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Mineral Water</h5>
-                                <a>Rp 15.000</a>
-                                <p class="card-text">This is a longer card with supporting text below.</p>
-                                <a href="#" class="btn btn-danger" id="minuman-15">Keranjang +</a>
+                                <a>Rp 3.000</a>
+                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p>Jumlah : <a id="jml-mnm-15">0</a></p>
+                                <a href="#" class="btn btn-danger" id="ps-mnm-15" onclick="return false;">Keranjang +</a>
+                                <a href="#" class="btn btn-dark" id="ms-mnm-15" onclick="return false;">-</a>
                             </div>
                         </div>
                     </div>
@@ -499,281 +546,323 @@
 		<script>
 			// Makanan
 			var hargatotal = 0;
-			var countmakanan1 = 0, countmakanan2 = 0, countmakanan3 = 0;
-			var tempo = '';
-			const temp = [];
-			const arrJumlah = [];
+			var countMkn1 = 0, countMkn2 = 0, countMkn3 = 0;
+			var countMnm1 = 0, countMnm2 = 0, countMnm3 = 0;
+			var tempMkn = '';
+			var tempMnm = '';
+			const arrMakanan = [];
+			const arrCountMkn = [];
+			const arrMinuman = [];
+			const arrCountMnm = [];
 			
-			document.getElementById("minjumlahmakanan1").addEventListener('click', function () {
-		    	countmakanan1 -= 1;
-		    	document.getElementById("jumlahmakanan1").innerHTML = countmakanan1;
-		    	
-		    	var jumlah = document.getElementById('jumlahMkn');
-		    	for (var i = 0; i <= temp.length; i++){
-		    		if (temp[i] == ' Ayam Kampung Goreng'){
-		    			arrJumlah[i] = countmakanan1;
-		    			jumlah.value = arrJumlah;
-		    		}
-		    	}
-		    	
-		    	var harga = document.getElementById('harga');
-			    harga.value = (hargatotal -= 15000);
-		    });
-			
-			document.getElementById("makanan-1").addEventListener('click', function () {
-			    var text = document.getElementById('makanan');
-			    var harga = document.getElementById('harga');
-			    var jumlah = document.getElementById('jumlahMkn');
-			    harga.value = (hargatotal += 15000);
-			    countmakanan1 += 1;
+		// MAKANAN
+			// MAKANAN 1
+			document.getElementById("ps-mkn-1").addEventListener('click', function () {
+			    var formMakanan = document.getElementById('makanan');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMkn = document.getElementById('jumlahMkn');
+			    formHarga.value = (hargatotal += 15000);
+			    countMkn1 += 1;
 			    
-			    document.getElementById("jumlahmakanan1").innerHTML = countmakanan1;
+			    document.getElementById("jml-mkn-1").innerHTML = countMkn1;
 			    
-			    tempo = ' Ayam Kampung Goreng';
+			    tempMkn = ' Ayam Kampung Goreng';
 		    	
-			    if (temp.length == 0){
-			    	arrJumlah.push(countmakanan1);
-			    	jumlah.value = arrJumlah;
+			    if (arrMakanan.length == 0){
+			    	arrCountMkn.push(countMkn1);
+			    	formJumlahMkn.value = arrCountMkn;
 			    	
-			    	temp.push(tempo);
-			    	text.value = temp[0];
+			    	arrMakanan.push(tempMkn);
+			    	formMakanan.value = arrMakanan[0];
 			    } else {
-			    	for (var i = 0; i <= temp.length; i++){
-			    		if (temp.includes(tempo)){
-			    			for (var j = 0; j <= temp.length; j++){
-			    				if (temp[j] == ' Ayam Kampung Goreng'){
-					    			arrJumlah[j] = countmakanan1;
-					    			jumlah.value = arrJumlah;
+			    	for (var i = 0; i <= arrMakanan.length; i++){
+			    		if (arrMakanan.includes(tempMkn)){
+			    			for (var j = 0; j <= arrMakanan.length; j++){
+			    				if (arrMakanan[j] == ' Ayam Kampung Goreng'){
+					    			arrCountMkn[j] = countMkn1;
+					    			formJumlahMkn.value = arrCountMkn;
 					    		}
 			    			}
 			    			break;
 			    		} else {
-			    			temp.push(tempo);
-			    			arrJumlah.push(countmakanan1);
+			    			arrMakanan.push(tempMkn);
+			    			arrCountMkn.push(countMkn1);
 			    		}
 			    	}
-			    	text.value = temp;
-			    	jumlah.value = arrJumlah;
+			    	formMakanan.value = arrMakanan;
+			    	formJumlahMkn.value = arrCountMkn;
 			    }
 			});
 			
-			
-			
-			
-			
-			
-			document.getElementById("minjumlahmakanan2").addEventListener('click', function () {
-		    	countmakanan2 -= 1;
-		    	document.getElementById("jumlahmakanan2").innerHTML = countmakanan2;
-		    	var jumlah = document.getElementById('jumlahMkn');
-		    	for (var i = 0; i <= temp.length; i++){
-		    		if (temp[i] == ' Ayam Kampung Goreng'){
-		    			arrJumlah[i] = countmakanan2;
-		    			jumlah.value = arrJumlah;
+			document.getElementById("ms-mkn-1").addEventListener('click', function () {
+		    	countMkn1 -= 1;
+		    	document.getElementById("jml-mkn-1").innerHTML = countMkn1;
+		    	var formJumlahMkn = document.getElementById('jumlahMkn');
+		    	for (var i = 0; i <= arrMakanan.length; i++){
+		    		if (arrMakanan[i] == ' Ayam Kampung Goreng'){
+		    			arrCountMkn[i] = countMkn1;
+		    			formJumlahMkn.value = arrCountMkn;
 		    		}
 		    	}
-		    	var harga = document.getElementById('harga');
-			    harga.value = (hargatotal -= 17000);
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 15000);
 		    });
 			
-			document.getElementById("makanan-2").addEventListener('click', function () {
-			    var text = document.getElementById('makanan');
-			    var harga = document.getElementById('harga');
-			    var jumlah = document.getElementById('jumlahMkn');
-			    harga.value = (hargatotal += 17000);
-			    countmakanan2 += 1;
-			    document.getElementById("jumlahmakanan2").innerHTML = countmakanan2;
-			    
-			    tempo = ' Ayam Kampung Bakar';
-		    	
-			    if (temp.length == 0){
-			    	arrJumlah.push(countmakanan2);
-			    	jumlah.value = arrJumlah;
-			    	temp.push(tempo);
-			    	text.value = temp[0];
+			// MAKANAN 2
+			document.getElementById("ps-mkn-2").addEventListener('click', function () {
+			    var formMakanan = document.getElementById('makanan');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMkn = document.getElementById('jumlahMkn');
+			    formHarga.value = (hargatotal += 17000);
+			    countMkn2 += 1;
+			    document.getElementById("jml-mkn-2").innerHTML = countMkn2;
+			    tempMkn = ' Ayam Kampung Bakar';
+			    if (arrMakanan.length == 0){
+			    	arrCountMkn.push(countMkn2);
+			    	formJumlahMkn.value = arrCountMkn;
+			    	arrMakanan.push(tempMkn);
+			    	formMakanan.value = arrMakanan[0];
 			    } else {
-			    	for (var i = 0; i <= temp.length; i++){
-			    		if (temp.includes(tempo)){
-			    			for (var j = 0; j <= temp.length; j++){
-			    				if (temp[j] == ' Ayam Kampung Bakar'){
-					    			arrJumlah[j] = countmakanan2;
-					    			jumlah.value = arrJumlah;
+			    	for (var i = 0; i <= arrMakanan.length; i++){
+			    		if (arrMakanan.includes(tempMkn)){
+			    			for (var j = 0; j <= arrMakanan.length; j++){
+			    				if (arrMakanan[j] == ' Ayam Kampung Bakar'){
+					    			arrCountMkn[j] = countMkn2;
+					    			formJumlahMkn.value = arrCountMkn;
 					    		}
 			    			}
 			    			break;
 			    		} else {
-			    			temp.push(tempo);
-			    			arrJumlah.push(countmakanan2);
+			    			arrMakanan.push(tempMkn);
+			    			arrCountMkn.push(countMkn2);
 			    		}
 			    	}
-			    	text.value = temp;
-			    	jumlah.value = arrJumlah;
+			    	formMakanan.value = arrMakanan;
+			    	formJumlahMkn.value = arrCountMkn;
 			    }
 			});
 			
-			
-			
-			
-			
-			
-			document.getElementById("minjumlahmakanan3").addEventListener('click', function () {
-		    	countmakanan3 -= 1;
-		    	document.getElementById("jumlahmakanan3").innerHTML = countmakanan3;
-		    	var jumlah = document.getElementById('jumlahMkn');
-		    	for (var i = 0; i <= temp.length; i++){
-		    		if (temp[i] == ' Ayam Mentega'){
-		    			arrJumlah[i] = countmakanan3;
-		    			jumlah.value = arrJumlah;
+			document.getElementById("ms-mkn-2").addEventListener('click', function () {
+		    	countMkn2 -= 1;
+		    	document.getElementById("jml-mkn-2").innerHTML = countMkn2;
+		    	var formJumlahMkn = document.getElementById('jumlahMkn');
+		    	for (var i = 0; i <= arrMakanan.length; i++){
+		    		if (arrMakanan[i] == ' Ayam Kampung Goreng'){
+		    			arrCountMkn[i] = countMkn2;
+		    			formJumlahMkn.value = arrCountMkn;
 		    		}
 		    	}
-		    	var harga = document.getElementById('harga');
-			    harga.value = (hargatotal -= 12000);
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 17000);
 		    });
 			
-			document.getElementById("makanan-3").addEventListener('click', function () {
-			    var text = document.getElementById('makanan');
-			    var harga = document.getElementById('harga');
-			    var jumlah = document.getElementById('jumlahMkn');
-			    harga.value = (hargatotal += 12000);
-			    countmakanan3 += 1;
-			    document.getElementById("jumlahmakanan3").innerHTML = countmakanan3;
-			    
-			    tempo = ' Ayam Mentega';
-		    	
-			    if (temp.length == 0){
-			    	arrJumlah.push(countmakanan3);
-			    	jumlah.value = arrJumlah;
-			    	temp.push(tempo);
-			    	text.value = temp[0];
+			// MAKANAN 3
+			document.getElementById("ps-mkn-3").addEventListener('click', function () {
+			    var formMakanan = document.getElementById('makanan');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMkn = document.getElementById('jumlahMkn');
+			    formHarga.value = (hargatotal += 12000);
+			    countMkn3 += 1;
+			    document.getElementById("jml-mkn-3").innerHTML = countMkn3;
+			    tempMkn = ' Ayam Mentega';
+			    if (arrMakanan.length == 0){
+			    	arrCountMkn.push(countMkn3);
+			    	formJumlahMkn.value = arrCountMkn;
+			    	arrMakanan.push(tempMkn);
+			    	formMakanan.value = arrMakanan[0];
 			    } else {
-			    	for (var i = 0; i <= temp.length; i++){
-			    		if (temp.includes(tempo)){
-			    			for (var j = 0; j <= temp.length; j++){
-			    				if (temp[j] == ' Ayam Mentega'){
-					    			arrJumlah[j] = countmakanan3;
-					    			jumlah.value = arrJumlah;
+			    	for (var i = 0; i <= arrMakanan.length; i++){
+			    		if (arrMakanan.includes(tempMkn)){
+			    			for (var j = 0; j <= arrMakanan.length; j++){
+			    				if (arrMakanan[j] == ' Ayam Mentega'){
+					    			arrCountMkn[j] = countMkn3;
+					    			formJumlahMkn.value = arrCountMkn;
 					    		}
 			    			}
 			    			break;
 			    		} else {
-			    			temp.push(tempo);
-			    			arrJumlah.push(countmakanan3);
+			    			arrMakanan.push(tempMkn);
+			    			arrCountMkn.push(countMkn3);
 			    		}
 			    	}
-			    	text.value = temp;
-			    	jumlah.value = arrJumlah;
+			    	formMakanan.value = arrMakanan;
+			    	formJumlahMkn.value = arrCountMkn;
 			    }
 			});
 			
-			document.getElementById("makanan-4").addEventListener('click', function () {
-			    var text = document.getElementById('makanan');
-			    text.value += 'Sapi Lada Hitam; ';
+			document.getElementById("ms-mkn-3").addEventListener('click', function () {
+		    	countMkn3 -= 1;
+		    	document.getElementById("jml-mkn-3").innerHTML = countMkn3;
+		    	var formJumlahMkn = document.getElementById('jumlahMkn');
+		    	for (var i = 0; i <= arrMakanan.length; i++){
+		    		if (arrMakanan[i] == ' Ayam Mentega'){
+		    			arrCountMkn[i] = countMkn3;
+		    			formJumlahMkn.value = arrCountMkn;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 12000);
+		    });
+			
+			// MAKANAN 4
+			document.getElementById("ps-mkn-4").addEventListener('click', function () {
+			    var formMakanan = document.getElementById('makanan');
+			    formMakanan.value += 'Sapi Lada Hitam; ';
 			});
-			document.getElementById("makanan-5").addEventListener('click', function () {
-			    var text = document.getElementById('makanan');
-			    text.value += 'Sapi Gongso; ';
+			document.getElementById("ps-mkn-5").addEventListener('click', function () {
+			    var formMakanan = document.getElementById('makanan');
+			    formMakanan.value += 'Sapi Gongso; ';
 			});
-			document.getElementById("makanan-6").addEventListener('click', function () {
-			    var text = document.getElementById('makanan');
-			    text.value += 'Sapi Sayur Asem; ';
+			document.getElementById("ps-mkn-6").addEventListener('click', function () {
+			    var formMakanan = document.getElementById('makanan');
+			    formMakanan.value += 'Sapi Sayur Asem; ';
 			});
-			document.getElementById("makanan-7").addEventListener('click', function () {
-			    var text = document.getElementById('makanan');
-			    text.value += 'Chicken Katsu; ';
+			document.getElementById("ps-mkn-7").addEventListener('click', function () {
+			    var formMakanan = document.getElementById('makanan');
+			    formMakanan.value += 'Chicken Katsu; ';
 			});
-			document.getElementById("makanan-8").addEventListener('click', function () {
-			    var text = document.getElementById('makanan');
-			    text.value += 'Nasi Goreng Ayam; ';
+			document.getElementById("ps-mkn-8").addEventListener('click', function () {
+			    var formMakanan = document.getElementById('makanan');
+			    formMakanan.value += 'Nasi Goreng Ayam; ';
 			});
-			document.getElementById("makanan-9").addEventListener('click', function () {
-			    var text = document.getElementById('makanan');
-			    text.value += 'Mie Goreng Ayam; ';
+			document.getElementById("ps-mkn-9").addEventListener('click', function () {
+			    var formMakanan = document.getElementById('makanan');
+			    formMakanan.value += 'Mie Goreng Ayam; ';
 			});
-			document.getElementById("makanan-10").addEventListener('click', function () {
-			    var text = document.getElementById('makanan');
-			    text.value += 'Steak Iga Sapi; ';
+			document.getElementById("ps-mkn-10").addEventListener('click', function () {
+			    var formMakanan = document.getElementById('makanan');
+			    formMakanan.value += 'Steak Iga Sapi; ';
 			});
-			document.getElementById("makanan-11").addEventListener('click', function () {
-			    var text = document.getElementById('makanan');
-			    text.value += 'Siomay; ';
+			document.getElementById("ps-mkn-11").addEventListener('click', function () {
+			    var formMakanan = document.getElementById('makanan');
+			    formMakanan.value += 'Siomay; ';
 			});
-			document.getElementById("makanan-12").addEventListener('click', function () {
-			    var text = document.getElementById('makanan');
-			    text.value += 'Batagor; ';
+			document.getElementById("ps-mkn-12").addEventListener('click', function () {
+			    var formMakanan = document.getElementById('makanan');
+			    formMakanan.value += 'Batagor; ';
 			});
-			document.getElementById("makanan-13").addEventListener('click', function () {
-			    var text = document.getElementById('makanan');
-			    text.value += 'Roti Bakar Keju; ';
+			document.getElementById("ps-mkn-13").addEventListener('click', function () {
+			    var formMakanan = document.getElementById('makanan');
+			    formMakanan.value += 'Roti Bakar Keju; ';
 			});
-			document.getElementById("makanan-14").addEventListener('click', function () {
-			    var text = document.getElementById('makanan');
-			    text.value += 'Kentang Goreng; ';
+			document.getElementById("ps-mkn-14").addEventListener('click', function () {
+			    var formMakanan = document.getElementById('makanan');
+			    formMakanan.value += 'Kentang Goreng; ';
 			});
-			document.getElementById("makanan-15").addEventListener('click', function () {
-			    var text = document.getElementById('makanan');
-			    text.value += 'Singkong Goreng; ';
+			document.getElementById("ps-mkn-15").addEventListener('click', function () {
+			    var formMakanan = document.getElementById('makanan');
+			    formMakanan.value += 'Singkong Goreng; ';
 			});
 
-			// Minuman
-			document.getElementById("minuman-1").addEventListener('click', function () {
-			    var text = document.getElementById('minuman');
-			    text.value += 'Kopi Putih Mercury; ';
+		// MINUMAN
+			// MINUMAN 1
+			document.getElementById("ps-mnm-1").addEventListener('click', function () {
+			    var formMinuman = document.getElementById('minuman');
+			    var formHarga = document.getElementById('harga');
+			    var formJumlahMnm = document.getElementById('jumlahMnm');
+			    formHarga.value = (hargatotal += 15000);
+			    countMnm1 += 1;
+			    
+			    document.getElementById("jml-mnm-1").innerHTML = countMnm1;
+			    
+			    tempMnm = ' Kopi Putih Mercury';
+		    	
+			    if (arrMinuman.length == 0){
+			    	arrCountMnm.push(countMnm1);
+			    	formJumlahMnm.value = arrCountMnm;
+			    	
+			    	arrMinuman.push(tempMnm);
+			    	formMinuman.value = arrMinuman[0];
+			    } else {
+			    	for (var i = 0; i <= arrMinuman.length; i++){
+			    		if (arrMinuman.includes(tempMnm)){
+			    			for (var j = 0; j <= arrMinuman.length; j++){
+			    				if (arrMinuman[j] == ' Kopi Putih Mercury'){
+					    			arrCountMnm[j] = countMnm1;
+					    			formJumlahMnm.value = arrCountMnm;
+					    		}
+			    			}
+			    			break;
+			    		} else {
+			    			arrMinuman.push(tempMnm);
+			    			arrCountMnm.push(countMnm1);
+			    		}
+			    	}
+			    	formMinuman.value = arrMinuman;
+			    	formJumlahMnm.value = arrCountMnm;
+			    }
 			});
+			
+			document.getElementById("ms-mkn-1").addEventListener('click', function () {
+		    	countMnm1 -= 1;
+		    	document.getElementById("jml-mnm-1").innerHTML = countMnm1;
+		    	var formJumlahMnm = document.getElementById('jumlahMnm');
+		    	for (var i = 0; i <= arrMinuman.length; i++){
+		    		if (arrMinuman[i] == ' Kopi Putih Mercury'){
+		    			arrCountMnm[i] = countMnm1;
+		    			formJumlahMnm.value = arrCountMnm;
+		    		}
+		    	}
+		    	var formHarga = document.getElementById('harga');
+			    formHarga.value = (hargatotal -= 15000);
+		    });
+
+			// MINUMAN 2
 			document.getElementById("minuman-2").addEventListener('click', function () {
-			    var text = document.getElementById('minuman');
-			    text.value += 'Kopi Susu Mercury; ';
+			    var formMakanan = document.getElementById('minuman');
+			    formMakanan.value += 'Kopi Susu Mercury; ';
 			});
 			document.getElementById("minuman-3").addEventListener('click', function () {
-			    var text = document.getElementById('minuman');
-			    text.value += 'Expresso; ';
+			    var formMakanan = document.getElementById('minuman');
+			    formMakanan.value += 'Expresso; ';
 			});
 			document.getElementById("minuman-4").addEventListener('click', function () {
-			    var text = document.getElementById('minuman');
-			    text.value += 'Americano; ';
+			    var formMakanan = document.getElementById('minuman');
+			    formMakanan.value += 'Americano; ';
 			});
 			document.getElementById("minuman-5").addEventListener('click', function () {
-			    var text = document.getElementById('minuman');
-			    text.value += 'Cafe Latte; ';
+			    var formMakanan = document.getElementById('minuman');
+			    formMakanan.value += 'Cafe Latte; ';
 			});
 			document.getElementById("minuman-6").addEventListener('click', function () {
-			    var text = document.getElementById('minuman');
-			    text.value += 'Cappuccino; ';
+			    var formMakanan = document.getElementById('minuman');
+			    formMakanan.value += 'Cappuccino; ';
 			});
 			document.getElementById("minuman-7").addEventListener('click', function () {
-			    var text = document.getElementById('minuman');
-			    text.value += 'Kopi Tubruk; ';
+			    var formMakanan = document.getElementById('minuman');
+			    formMakanan.value += 'Kopi Tubruk; ';
 			});
 			document.getElementById("minuman-8").addEventListener('click', function () {
-			    var text = document.getElementById('minuman');
-			    text.value += 'Kopi V60; ';
+			    var formMakanan = document.getElementById('minuman');
+			    formMakanan.value += 'Kopi V60; ';
 			});
 			document.getElementById("minuman-9").addEventListener('click', function () {
-			    var text = document.getElementById('minuman');
-			    text.value += 'Blue Late; ';
+			    var formMakanan = document.getElementById('minuman');
+			    formMakanan.value += 'Blue Late; ';
 			});
 			document.getElementById("minuman-10").addEventListener('click', function () {
-			    var text = document.getElementById('minuman');
-			    text.value += 'Coconut Latte; ';
+			    var formMakanan = document.getElementById('minuman');
+			    formMakanan.value += 'Coconut Latte; ';
 			});
 			document.getElementById("minuman-11").addEventListener('click', function () {
-			    var text = document.getElementById('minuman');
-			    text.value += 'Matcha Late; ';
+			    var formMakanan = document.getElementById('minuman');
+			    formMakanan.value += 'Matcha Late; ';
 			});
 			document.getElementById("minuman-12").addEventListener('click', function () {
-			    var text = document.getElementById('minuman');
-			    text.value += 'Chocolate; ';
+			    var formMakanan = document.getElementById('minuman');
+			    formMakanan.value += 'Chocolate; ';
 			});
 			document.getElementById("minuman-13").addEventListener('click', function () {
-			    var text = document.getElementById('minuman');
-			    text.value += 'Lemon Tea; ';
+			    var formMakanan = document.getElementById('minuman');
+			    formMakanan.value += 'Lemon Tea; ';
 			});
 			document.getElementById("minuman-14").addEventListener('click', function () {
-			    var text = document.getElementById('minuman');
-			    text.value += 'Orange Juice; ';
+			    var formMakanan = document.getElementById('minuman');
+			    formMakanan.value += 'Orange Juice; ';
 			});
 			document.getElementById("minuman-15").addEventListener('click', function () {
-			    var text = document.getElementById('minuman');
-			    text.value += 'Mineral Water; ';
+			    var formMakanan = document.getElementById('minuman');
+			    formMakanan.value += 'Mineral Water; ';
 			});
 			
 		</script>

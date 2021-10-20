@@ -24,10 +24,10 @@ public class Kedaikopi {
 	private String minuman;
 	
 	@Column(name = "jumlahMkn")
-	private int jumlahMkn;
+	private String jumlahMkn;
 	
 	@Column(name = "jumlahMnm")
-	private int jumlahMnm;
+	private String jumlahMnm;
 	
 	@Column(name = "verifikasi")
 	private boolean verifikasi;
@@ -36,10 +36,8 @@ public class Kedaikopi {
 	protected Kedaikopi() {
 		
 	}
-	
-	
-	
-public Kedaikopi(long id, String makanan, String minuman, int jumlahMkn, int jumlahMnm, boolean verifikasi) {
+
+	public Kedaikopi(long id, String makanan, String minuman, String jumlahMkn, String jumlahMnm, boolean verifikasi) {
 		super();
 		this.id = id;
 		this.makanan = makanan;
@@ -48,8 +46,8 @@ public Kedaikopi(long id, String makanan, String minuman, int jumlahMkn, int jum
 		this.jumlahMnm = jumlahMnm;
 		this.verifikasi = verifikasi;
 	}
-	
-	public Kedaikopi(String makanan, String minuman, int jumlahMkn, int jumlahMnm, boolean verifikasi) {
+
+	public Kedaikopi(String makanan, String minuman, String jumlahMkn, String jumlahMnm, boolean verifikasi) {
 		super();
 		this.makanan = makanan;
 		this.minuman = minuman;
@@ -57,7 +55,6 @@ public Kedaikopi(long id, String makanan, String minuman, int jumlahMkn, int jum
 		this.jumlahMnm = jumlahMnm;
 		this.verifikasi = verifikasi;
 	}
-
 
 	public Long getId() {
 		return id;
@@ -83,19 +80,19 @@ public Kedaikopi(long id, String makanan, String minuman, int jumlahMkn, int jum
 		this.minuman = minuman;
 	}
 
-	public int getJumlahMkn() {
+	public String getJumlahMkn() {
 		return jumlahMkn;
 	}
 
-	public void setJumlahMkn(int jumlahMkn) {
+	public void setJumlahMkn(String jumlahMkn) {
 		this.jumlahMkn = jumlahMkn;
 	}
 
-	public int getJumlahMnm() {
+	public String getJumlahMnm() {
 		return jumlahMnm;
 	}
 
-	public void setJumlahMnm(int jumlahMnm) {
+	public void setJumlahMnm(String jumlahMnm) {
 		this.jumlahMnm = jumlahMnm;
 	}
 
@@ -106,7 +103,6 @@ public Kedaikopi(long id, String makanan, String minuman, int jumlahMkn, int jum
 	public void setVerifikasi(boolean verifikasi) {
 		this.verifikasi = verifikasi;
 	}
-
 
 		@Override
 	public int hashCode() {

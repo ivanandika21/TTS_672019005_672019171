@@ -63,8 +63,8 @@ public class KedaikopiController extends HttpServlet {
 	private void insertData(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
 		String makanan = request.getParameter("makanan");
 		String minuman = request.getParameter("minuman");
-		int jumlahMkn = Integer.parseInt(request.getParameter("jumlahMkn"));
-		int jumlahMnm = Integer.parseInt(request.getParameter("jumlahMnm"));
+		String jumlahMkn = request.getParameter("jumlahMkn");
+		String jumlahMnm = request.getParameter("jumlahMnm");
 		boolean verifikasi = Boolean.valueOf(request.getParameter("verifikasi"));
 		
 		Kedaikopi insertData = new Kedaikopi(makanan, minuman, jumlahMkn, jumlahMnm, verifikasi);
@@ -76,8 +76,8 @@ public class KedaikopiController extends HttpServlet {
 		int id = Integer.parseInt(request.getParameter("id"));
 		String makanan = request.getParameter("makanan");
 		String minuman = request.getParameter("minuman");
-		int jumlahMkn = Integer.parseInt(request.getParameter("jumlahMkn"));
-		int jumlahMnm = Integer.parseInt(request.getParameter("jumlahMnm"));
+		String jumlahMkn = request.getParameter("jumlahMkn");
+		String jumlahMnm = request.getParameter("jumlahMnm");
 		boolean verifikasi = Boolean.valueOf(request.getParameter("verifikasi"));
 		
 		Kedaikopi updateData = new Kedaikopi(id, makanan, minuman, jumlahMkn, jumlahMnm, verifikasi);
