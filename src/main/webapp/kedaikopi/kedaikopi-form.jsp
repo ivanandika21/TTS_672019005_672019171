@@ -142,6 +142,10 @@
             <div class="py-5">
                 <h3 class="py-3">Menu Makanan</h3>
                 <div class="row row-cols-1 row-cols-md-5 g-4">
+                
+                
+                
+                
                     <div class="col">
                         <div class="card">
                             <img src="images/img-2.jpg" class="card-img-top" alt="" />
@@ -155,6 +159,10 @@
                             </div>
                         </div>
                     </div>
+                    
+                    
+                    
+                    
                     <div class="col">
                         <div class="card">
                             <img src="images/img-2.jpg" class="card-img-top" alt="" />
@@ -499,6 +507,7 @@
 			document.getElementById("minjumlahmakanan1").addEventListener('click', function () {
 		    	countmakanan1 -= 1;
 		    	document.getElementById("jumlahmakanan1").innerHTML = countmakanan1;
+		    	
 		    	var jumlah = document.getElementById('jumlahMkn');
 		    	for (var i = 0; i <= temp.length; i++){
 		    		if (temp[i] == ' Ayam Kampung Goreng'){
@@ -506,6 +515,7 @@
 		    			jumlah.value = arrJumlah;
 		    		}
 		    	}
+		    	
 		    	var harga = document.getElementById('harga');
 			    harga.value = (hargatotal -= 15000);
 		    });
@@ -516,6 +526,7 @@
 			    var jumlah = document.getElementById('jumlahMkn');
 			    harga.value = (hargatotal += 15000);
 			    countmakanan1 += 1;
+			    
 			    document.getElementById("jumlahmakanan1").innerHTML = countmakanan1;
 			    
 			    tempo = ' Ayam Kampung Goreng';
@@ -523,6 +534,7 @@
 			    if (temp.length == 0){
 			    	arrJumlah.push(countmakanan1);
 			    	jumlah.value = arrJumlah;
+			    	
 			    	temp.push(tempo);
 			    	text.value = temp[0];
 			    } else {
