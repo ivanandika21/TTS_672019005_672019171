@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,21 +15,21 @@
         <!-- start navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
             <div class="container">
-                <a href=""><img src="images/profil.png" alt="" width="50px" /></a>
-                <a class="navbar-brand fw-bold ps-3" href="#">Kedai Kopi Mercury (Admin Page)</a>
+                <img src="https://www.linkpicture.com/q/profil_3.png" alt="" width="50px" />
+                <a class="navbar-brand fw-bold ps-3" href="">Kedai Kopi Mercury</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="<%=request.getContextPath()%>/new">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link fw-bold text-danger" href="">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="admin.html">Admin</a>
+                            <a class="nav-link" href="<%=request.getContextPath()%>/">Admin</a>
                         </li>
                     </ul>
                 </div>
@@ -38,7 +40,7 @@
         <!-- start tabel -->
         <div class="container py-5">
             <div class="d-flex">
-                <img src="images/profil.png" alt="" height="200px" />
+                <img src="https://www.linkpicture.com/q/profil_3.png" alt="" height="200px" />
                 <div class="ps-5">
                     <h3 class="py-3">About Us</h3>
                     <p>
@@ -47,8 +49,9 @@
                     </p>
                     <ul>
                         <li>Java Programming Language</li>
+                        <li>JavaServer Pages (JSP)</li>
                         <li>JavaServer Faces (JSF)</li>
-                        <li>Hibernate</li>
+                        <li>Hibernate ORM</li>
                         <li>JSTL</li>
                         <li>JDK</li>
                         <li>Apache Tomcat Server</li>

@@ -17,21 +17,21 @@
         <!-- start navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
             <div class="container">
-                <a href=""><img src="/images/profil.png" alt="" width="50px" /></a>
-                <a class="navbar-brand fw-bold ps-3" href="#">Kedai Kopi Mercury (Admin Page)</a>
+                <img src="https://www.linkpicture.com/q/profil_3.png" alt="" width="50px" />
+                <a class="navbar-brand fw-bold ps-3" href="">Kedai Kopi Mercury (Admin Page)</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="<%=request.getContextPath()%>/new">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="./kedaikopi/about.jsp">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Admin</a>
+                            <a class="nav-link fw-bold text-danger" href="">Admin</a>
                         </li>
                         <li class="nav-item ps-2">
                             <a href="<%=request.getContextPath()%>/new" class="btn btn-secondary">Add Item</a>
