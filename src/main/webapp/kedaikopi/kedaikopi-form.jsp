@@ -545,6 +545,11 @@
 			    }
 			});
 			
+			
+			
+			
+			
+			
 			document.getElementById("minjumlahmakanan2").addEventListener('click', function () {
 		    	countmakanan2 -= 1;
 		    	document.getElementById("jumlahmakanan2").innerHTML = countmakanan2;
