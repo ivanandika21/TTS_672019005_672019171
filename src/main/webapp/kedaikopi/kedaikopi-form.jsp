@@ -73,7 +73,7 @@
 											<fieldset class="form-group">
 												<label>Hargatotal</label> <input type="text"
 													value="<c:out value='${kedaikopi.hargatotal}' />" class="form-control"
-													name="harga" id="harga">
+													name="hargatotal" id="harga">
 											</fieldset>
 											
 											<fieldset class="form-group">

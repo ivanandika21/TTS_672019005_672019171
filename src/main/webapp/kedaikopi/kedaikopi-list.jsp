@@ -54,6 +54,7 @@
 						<th>Jumlah Mkn</th>
 						<th>Minuman</th>
 						<th>Jumlah Mnm</th>
+						<th>Harga Total</th>
 						<th>Verifikasi</th>
 						<th>Actions</th>
 					</tr>
@@ -67,10 +68,11 @@
 							<td><c:out value="${kedaikopi.jumlahMkn}" /></td>
 							<td><c:out value="${kedaikopi.minuman}" /></td>
 							<td><c:out value="${kedaikopi.jumlahMnm}" /></td>
+							<td><c:out value="${kedaikopi.hargatotal}" /></td>
 							<td><c:out value="${kedaikopi.verifikasi}" /></td>
 							<td>
-                                <a class="btn btn-primary" href="edit?id=<c:out value='${kedaikopi.id}' />">Edit</a>&nbsp;&nbsp;
-                                <a class="btn btn-danger" href="delete?id=<c:out value='${kedaikopi.id}' />">Delete</a>
+                                <a class="btn btn-primary my-1" href="edit?id=<c:out value='${kedaikopi.id}' />">Edit</a>&nbsp;&nbsp;
+                                <a class="btn btn-danger my-1" href="delete?id=<c:out value='${kedaikopi.id}' />">Delete</a>
                             </td>
 						</tr>
 					</c:forEach>

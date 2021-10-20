@@ -65,9 +65,10 @@ public class KedaikopiController extends HttpServlet {
 		String minuman = request.getParameter("minuman");
 		String jumlahMkn = request.getParameter("jumlahMkn");
 		String jumlahMnm = request.getParameter("jumlahMnm");
+		String hargatotal = request.getParameter("hargatotal");
 		boolean verifikasi = Boolean.valueOf(request.getParameter("verifikasi"));
 		
-		Kedaikopi insertData = new Kedaikopi(makanan, minuman, jumlahMkn, jumlahMnm, verifikasi);
+		Kedaikopi insertData = new Kedaikopi(makanan, minuman, jumlahMkn, jumlahMnm, hargatotal, verifikasi);
 		kedaikopiDao.insertData(insertData);
 		response.sendRedirect("list");
 	}
@@ -78,9 +79,10 @@ public class KedaikopiController extends HttpServlet {
 		String minuman = request.getParameter("minuman");
 		String jumlahMkn = request.getParameter("jumlahMkn");
 		String jumlahMnm = request.getParameter("jumlahMnm");
+		String hargatotal = request.getParameter("hargatotal");
 		boolean verifikasi = Boolean.valueOf(request.getParameter("verifikasi"));
 		
-		Kedaikopi updateData = new Kedaikopi(id, makanan, minuman, jumlahMkn, jumlahMnm, verifikasi);
+		Kedaikopi updateData = new Kedaikopi(id, makanan, minuman, jumlahMkn, jumlahMnm, hargatotal, verifikasi);
 		kedaikopiDao.updateData(updateData);
 		response.sendRedirect("list");
 	}

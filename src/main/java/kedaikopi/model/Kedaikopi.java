@@ -29,6 +29,9 @@ public class Kedaikopi {
 	@Column(name = "jumlahMnm")
 	private String jumlahMnm;
 	
+	@Column(name = "hargatotal")
+	private String hargatotal;
+	
 	@Column(name = "verifikasi")
 	private boolean verifikasi;
 	
@@ -37,25 +40,30 @@ public class Kedaikopi {
 		
 	}
 
-	public Kedaikopi(long id, String makanan, String minuman, String jumlahMkn, String jumlahMnm, boolean verifikasi) {
+	
+
+	public Kedaikopi(long id, String makanan, String minuman, String jumlahMkn, String jumlahMnm, String hargatotal, boolean verifikasi) {
 		super();
 		this.id = id;
 		this.makanan = makanan;
 		this.minuman = minuman;
 		this.jumlahMkn = jumlahMkn;
 		this.jumlahMnm = jumlahMnm;
+		this.hargatotal = hargatotal;
 		this.verifikasi = verifikasi;
 	}
 
-	public Kedaikopi(String makanan, String minuman, String jumlahMkn, String jumlahMnm, boolean verifikasi) {
+	public Kedaikopi(String makanan, String minuman, String jumlahMkn, String jumlahMnm, String hargatotal, boolean verifikasi) {
 		super();
 		this.makanan = makanan;
 		this.minuman = minuman;
 		this.jumlahMkn = jumlahMkn;
 		this.jumlahMnm = jumlahMnm;
+		this.hargatotal = hargatotal;
 		this.verifikasi = verifikasi;
 	}
 
+	
 	public Long getId() {
 		return id;
 	}
@@ -96,6 +104,14 @@ public class Kedaikopi {
 		this.jumlahMnm = jumlahMnm;
 	}
 
+	public String getHargatotal() {
+		return hargatotal;
+	}
+
+	public void setHargatotal(String hargatotal) {
+		this.hargatotal = hargatotal;
+	}
+
 	public boolean isVerifikasi() {
 		return verifikasi;
 	}
@@ -104,7 +120,8 @@ public class Kedaikopi {
 		this.verifikasi = verifikasi;
 	}
 
-		@Override
+
+	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
