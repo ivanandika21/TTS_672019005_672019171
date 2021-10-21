@@ -14,8 +14,22 @@
         <link rel="stylesheet" href="style.css" />
         <style>
 			.modal-backdrop {
-				z-index: 0;
+				z-index: 2;
 			}
+			.modal:nth-of-type(even) {
+			    z-index: 1062 !important;
+			}
+			.modal-backdrop.show:nth-of-type(even) {
+			    z-index: 1061 !important;
+			}
+			table {
+	            border-collapse: collapse;
+	            border-spacing: 0;
+	        }
+	        th, td{
+	            padding: 10px 20px;
+	            border: 1px solid #000;
+	        }
         </style>
     </head>
     <body>
@@ -39,77 +53,122 @@
                             <a class="nav-link" href="<%=request.getContextPath()%>/">Admin</a>
                         </li>
                         <li class="nav-item ps-2">
-                        	<a href="#myModal" role="button" class="btn btn-danger" data-bs-toggle="modal">Keranjang</a>
-                         	<div id="myModal" class="modal fade" tabindex="0">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title">Confirmation</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                        </div>
-                                        <div class="modal-body">
-									        <!-- start form -->
-											<c:if test="${kedaikopi != null}">
+                        	<a data-bs-toggle="modal" href="#myModal" class="btn btn-primary">Keranjang</a>
+
+							<div class="modal" id="myModal">
+								<div class="modal-dialog modal-lg">
+							      	<div class="modal-content">
+							        	<div class="modal-header">
+							          		<h4 class="modal-title">Modal title</h4>    
+							          		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							        	</div>
+							        	<div class="container"></div>
+							        	<div class="modal-body">
+							        		<c:forEach items="${allFestivals}" var="festival">
+											    <tr>      
+											        <td>${festival.festivalName}</td>
+											        <td>${festival.location}</td>
+											        <td>${festival.startDate}</td>
+											        <td>${festival.endDate}</td>
+											        <td>${festival.URL}</td>  
+											    </tr>
+											</c:forEach>
+							          		<a data-bs-toggle="modal" href="#myModal2" class="btn btn-primary">Launch modal</a>
+							        	</div>
+							        	<div class="modal-footer">
+							          		<a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Close</a>
+							        	</div>
+							      	</div>
+							    </div>
+							</div>
+							<div class="modal" id="myModal2" data-bs-backdrop="static">
+								<div class="modal-dialog">
+							      	<div class="modal-content">
+							        	<div class="modal-header">
+							          		<h4 class="modal-title">2nd Modal title</h4>
+							          		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							        	</div>
+							        	<div class="container"></div>
+							        	<div class="modal-body">
+									          <c:if test="${kedaikopi != null}">
 												<form action="update" method="post">
 											</c:if>
 											<c:if test="${kedaikopi == null}">
 												<form action="insert" method="post">
 											</c:if>
-											<caption>
-												<h2>
-													<c:if test="${kedaikopi != null}">
-							            			Edit Todo
-							            		</c:if>
-													<c:if test="${kedaikopi == null}">
-							            			Tambahkan Pesanan
-							            		</c:if>
-												</h2>
-											</caption>
-							
-											<c:if test="${kedaikopi != null}">
-												<input type="hidden" name="id" value="<c:out value='${kedaikopi.id}' />" />
-											</c:if>
-											
-											<fieldset class="form-group">
-												<label>Hargatotal</label> <input type="text"
-													value="<c:out value='${kedaikopi.hargatotal}' />" class="form-control"
-													name="hargatotal" id="harga">
-											</fieldset>
-											
-											<fieldset class="form-group">
-												<label>Makanan</label> <input type="text"
-													value="<c:out value='${kedaikopi.makanan}' />" class="form-control"
-													name="makanan" id="makanan">
-											</fieldset>
-											
-											<fieldset class="form-group">
-												<label>Jumlah Makanan</label> <input type="text"
-													value="<c:out value='${kedaikopi.jumlahMkn}' />" class="form-control"
-													name="jumlahMkn" id="jumlahMkn">
-											</fieldset>
-							
-											<fieldset class="form-group">
-												<label>Minuman</label> <input type="text"
-													value="<c:out value='${kedaikopi.minuman}' />" class="form-control"
-													name="minuman" id="minuman">
-											</fieldset>
-							
-											<fieldset class="form-group">
-												<label>Jumlah Minuman</label> <input type="text"
-													value="<c:out value='${kedaikopi.jumlahMnm}' />" class="form-control"
-													name="jumlahMnm" id="jumlahMnm">
-											</fieldset>
-											
-											<div class="py-3">
-												<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-												<button type="submit" class="btn btn-success">Pesan</button>
-											</div>
+									        	<caption>
+													<h2>
+														<c:if test="${kedaikopi != null}">
+								            			Edit Transaksi
+								            		</c:if>
+														<c:if test="${kedaikopi == null}">
+								            			Tambahkan Pesanan
+								            		</c:if>
+													</h2>
+												</caption>
+								
+												<c:if test="${kedaikopi != null}">
+													<input type="hidden" name="id" value="<c:out value='${kedaikopi.id}' />" />
+												</c:if>
+												
+												<fieldset class="form-group">
+													<label>Hargatotal</label> <input type="text"
+														value="<c:out value='${kedaikopi.hargatotal}' />" class="form-control"
+														name="hargatotal" id="harga">
+												</fieldset>
+												
+												<fieldset class="form-group">
+													<label>Makanan</label> <input type="text"
+														value="<c:out value='${kedaikopi.makanan}' />" class="form-control"
+														name="makanan" id="makanan">
+												</fieldset>
+												
+												<fieldset class="form-group">
+													<label>Jumlah Makanan</label> <input type="text"
+														value="<c:out value='${kedaikopi.jumlahMkn}' />" class="form-control"
+														name="jumlahMkn" id="jumlahMkn">
+												</fieldset>
+								
+												<fieldset class="form-group">
+													<label>Minuman</label> <input type="text"
+														value="<c:out value='${kedaikopi.minuman}' />" class="form-control"
+														name="minuman" id="minuman">
+												</fieldset>
+								
+												<fieldset class="form-group">
+													<label>Jumlah Minuman</label> <input type="text"
+														value="<c:out value='${kedaikopi.jumlahMnm}' />" class="form-control"
+														name="jumlahMnm" id="jumlahMnm">
+												</fieldset>
+												
+												<div class="py-3">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+													<a href="#myModal2" role="button" class="btn btn-success" data-bs-toggle="modal">Pesan</a>
+												</div>
 											</form>
-											<!-- stop form -->
-							      		</div>
-                                    </div>
-                                </div>
-                            </div>
+											<div id="myModal2" class="modal fade" tabindex="0">
+				                                <div class="modal-dialog">
+				                                    <div class="modal-content">
+				                                        <div class="modal-header">
+				                                            <h5 class="modal-title">Confirmation</h5>
+				                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				                                        </div>
+				                                        <div class="modal-body">
+													        <!-- start form -->
+															<h2>Pemesanan Berhasil</h2>
+															<!-- stop form -->
+											      		</div>
+				                                    </div>
+				                                </div>
+				                            </div>
+							        	</div>
+							        	<div class="modal-footer">
+							          		<a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Close</a>
+							          		<a href="#" class="btn btn-primary">Save changes</a>
+							        	</div>
+							      	</div>
+							    </div>
+							</div>
                         </li>
                     </ul>
                 </div>
@@ -129,6 +188,7 @@
                         <h1>Selamat Datang</h1>
                         <p>Halo Selamat datang di Kedai Kopi Mercury!</p>
                         <a href="#menu" class="btn btn-outline-danger">Pesan Sekarang</a>
+                        <div id="disini"></div>
                     </div>
                 </div>
             </div>
@@ -558,6 +618,7 @@
 			const arrCountMkn = [];
 			const arrMinuman = [];
 			const arrCountMnm = [];
+			var mytable = "<table><tr><th>Item</th><th>Jumlah</th></tr>";
 			
 		// MAKANAN
 			// MAKANAN 1
@@ -585,6 +646,9 @@
 			    				if (arrMakanan[j] == ' Ayam Kampung Goreng'){
 					    			arrCountMkn[j] = countMkn1;
 					    			formJumlahMkn.value = arrCountMkn;
+					    			// INI BIKIN TABEL
+									mytable += "<tr><td>" + arrMakanan[j] + "</td>" + "<td>" + arrCountMkn[j] + "</td>" + "</tr>";
+									document.getElementById("disini").innerHTML = mytable;
 					    		}
 			    			}
 			    			break;
@@ -606,6 +670,8 @@
 		    		if (arrMakanan[i] == ' Ayam Kampung Goreng'){
 		    			arrCountMkn[i] = countMkn1;
 		    			formJumlahMkn.value = arrCountMkn;
+		    			
+		    			
 		    		}
 		    	}
 		    	var formHarga = document.getElementById('harga');
@@ -633,6 +699,8 @@
 			    				if (arrMakanan[j] == ' Ayam Kampung Bakar'){
 					    			arrCountMkn[j] = countMkn2;
 					    			formJumlahMkn.value = arrCountMkn;
+					    			
+					    			
 					    		}
 			    			}
 			    			break;
@@ -654,6 +722,8 @@
 		    		if (arrMakanan[i] == ' Ayam Kampung Goreng'){
 		    			arrCountMkn[i] = countMkn2;
 		    			formJumlahMkn.value = arrCountMkn;
+		    			
+		    			
 		    		}
 		    	}
 		    	var formHarga = document.getElementById('harga');
@@ -2069,6 +2139,7 @@
 		    	var formHarga = document.getElementById('harga');
 			    formHarga.value = (hargatotal -= 3000);
 		    });
+			
 			
 		</script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
