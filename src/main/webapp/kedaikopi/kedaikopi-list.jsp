@@ -44,7 +44,15 @@
 
         <!-- start tabel -->
         <div class="container py-5">
-            <h3>Daftar Transaksi</h3>
+        	<div>
+        		<h3>Daftar Transaksi</h3>
+	            <c:set var="total" value="${0}"/>
+				<c:forEach var="kedaikopi" items="${listKedaikopi}">
+				    <c:set var="total" value="${total + kedaikopi.hargatotal}" />
+				</c:forEach>
+				<h5 class="text-end mb-3">Total Pemasukan : Rp <c:out value="${total}" />,-</h5>
+        	</div>
+	            
             <div class="">
                 <table class="table table-bordered">
 				<thead>
@@ -61,7 +69,6 @@
 				</thead>
 				<tbody>
 					<c:forEach var="kedaikopi" items="${listKedaikopi}">
-
 						<tr>
 							<td><c:out value="${kedaikopi.id}" /></td>
 							<td><c:out value="${kedaikopi.makanan}" /></td>

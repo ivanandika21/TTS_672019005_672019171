@@ -117,8 +117,8 @@
                     <div class="align-self-center text-center py-5">
                     	<img src="https://www.linkpicture.com/q/profil_3.png">
                         <h1>Selamat Datang</h1>
-                        <p>Halo Selamat datang di Kedai Kopi Mercury!</p>
-                        <a href="#menu" class="btn btn-outline-danger">Pesan Sekarang</a>
+                        <p>di Kedai Kopi Mercury!</p>
+                        <a href="#menu" class="btn btn-outline-danger mt-3">Pesan Sekarang</a>
                     </div>
                 </div>
             </div>
@@ -133,11 +133,11 @@
                 <div class="row row-cols-1 row-cols-md-5 g-4">
                     <div class="col">
                         <div class="card">
-                            <img src="https://cdn.pixabay.com/photo/2015/03/26/09/39/fried-chicken-690039__480.jpg" class="card-img-top" alt="" />
+                            <img src="https://st4.depositphotos.com/27171036/29270/i/600/depositphotos_292708802-stock-photo-traditional-indonesian-culinary-food-ayam.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Ayam Kampung Goreng</h5>
                                 <a>Rp 15.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Ayam Kampung Goreng, Nasi, Tempe Goreng, Lalapan.</p>
                                 <p>Jumlah : <a id="jml-mkn-1">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mkn-1" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mkn-1" onclick="return false;">-</a>
@@ -146,11 +146,11 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="https://images.unsplash.com/photo-1630315500315-43112e2bfd88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=773&q=80" class="card-img-top" alt="" />
+                            <img src="https://previews.123rf.com/images/ismedhasibuan/ismedhasibuan1702/ismedhasibuan170200025/83224783-ayam-bakar-indonesian-chicken-roasted.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Ayam Kampung Bakar</h5>
                                 <a>Rp 17.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Ayam Kampung Bakar, Nasi, Tempe Goreng, Lalapan.</p>
                                 <p>Jumlah : <a id="jml-mkn-2">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mkn-2" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mkn-2" onclick="return false;">-</a>
@@ -163,7 +163,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Ayam Mentega</h5>
                                 <a>Rp 12.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Ayam Mentega, Nasi, Lalapan.</p>
                                 <p>Jumlah : <a id="jml-mkn-3">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mkn-3" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mkn-3" onclick="return false;">-</a>
@@ -176,7 +176,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Sapi Lada Hitam</h5>
                                 <a>Rp 22.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Sapi Lada Hitam, Nasi, Tahu, Lalapan.</p>
                                 <p>Jumlah : <a id="jml-mkn-4">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mkn-4" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mkn-4" onclick="return false;">-</a>
@@ -189,7 +189,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Sapi Gongso</h5>
                                 <a>Rp 24.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Sapi Gongso, Nasi, Tahu, Lalapan.</p>
                                 <p>Jumlah : <a id="jml-mkn-5">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mkn-5" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mkn-5" onclick="return false;">-</a>
@@ -202,7 +202,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Sapi Sayur Asem</h5>
                                 <a>Rp 20.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Sapi Sayur Asem, Nasi.</p>
                                 <p>Jumlah : <a id="jml-mkn-6">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mkn-6" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mkn-6" onclick="return false;">-</a>
@@ -215,7 +215,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Chicken Katsu</h5>
                                 <a>Rp 25.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Chicken Katsu, Nasi, Bubuk Cabai.</p>
                                 <p>Jumlah : <a id="jml-mkn-7">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mkn-7" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mkn-7" onclick="return false;">-</a>
@@ -228,7 +228,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Nasi Goreng Ayam</h5>
                                 <a>Rp 14.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Nasi Goreng Ayam, Krupuk, Telur.</p>
                                 <p>Jumlah : <a id="jml-mkn-8">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mkn-8" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mkn-8" onclick="return false;">-</a>
@@ -241,7 +241,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Mie Goreng Ayam</h5>
                                 <a>Rp 14.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Mie Goreng Ayam, Krupuk, Telur.</p>
                                 <p>Jumlah : <a id="jml-mkn-9">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mkn-9" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mkn-9" onclick="return false;">-</a>
@@ -254,7 +254,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Steak Iga Sapi</h5>
                                 <a>Rp 30.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Steak Iga Sapi, Nasi, Lalapan.</p>
                                 <p>Jumlah : <a id="jml-mkn-10">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mkn-10" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mkn-10" onclick="return false;">-</a>
@@ -267,7 +267,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Siomay</h5>
                                 <a>Rp 8.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Siomay, Saus Kecap.</p>
                                 <p>Jumlah : <a id="jml-mkn-11">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mkn-11" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mkn-11" onclick="return false;">-</a>
@@ -280,7 +280,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Batagor</h5>
                                 <a>Rp 10.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Batagor, Saus Kecap.</p>
                                 <p>Jumlah : <a id="jml-mkn-12">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mkn-12" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mkn-12" onclick="return false;">-</a>
@@ -293,7 +293,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Roti Bakar Keju</h5>
                                 <a>Rp 7.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Roti Bakar Keju, Mayones, Susu.</p>
                                 <p>Jumlah : <a id="jml-mkn-13">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mkn-13" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mkn-13" onclick="return false;">-</a>
@@ -306,7 +306,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Kentang Goreng</h5>
                                 <a>Rp 10.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Kentang Goreng, Saus, Bumbu.</p>
                                 <p>Jumlah : <a id="jml-mkn-14">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mkn-14" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mkn-14" onclick="return false;">-</a>
@@ -319,7 +319,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Singkong Goreng</h5>
                                 <a>Rp 8.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Singkong Goreng, Susu, Keju.</p>
                                 <p>Jumlah : <a id="jml-mkn-15">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mkn-15" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mkn-15" onclick="return false;">-</a>
@@ -339,7 +339,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Kopi Putih Mercury</h5>
                                 <a>Rp 8.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Kopi Putih khas Kedai Kopi Mercury.</p>
                                 <p>Jumlah : <a id="jml-mnm-1">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mnm-1" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mnm-1" onclick="return false;">-</a>
@@ -352,7 +352,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Kopi Susu Mercury</h5>
                                 <a>Rp 10.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Kopi Susu khas Kedai Kopi Mercury.</p>
                                 <p>Jumlah : <a id="jml-mnm-2">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mnm-2" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mnm-2" onclick="return false;">-</a>
@@ -365,7 +365,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Expresso</h5>
                                 <a>Rp 11.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Kopi giling dengan tekanan suhu tinggi.</p>
                                 <p>Jumlah : <a id="jml-mnm-3">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mnm-3" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mnm-3" onclick="return false;">-</a>
@@ -378,7 +378,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Americano</h5>
                                 <a>Rp 11.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Campuran kopi Expresso dengan air panas.</p>
                                 <p>Jumlah : <a id="jml-mnm-4">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mnm-4" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mnm-4" onclick="return false;">-</a>
@@ -391,7 +391,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Cafe Latte</h5>
                                 <a>Rp 9.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Kopi latte dengan campuran susu.</p>
                                 <p>Jumlah : <a id="jml-mnm-5">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mnm-5" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mnm-5" onclick="return false;">-</a>
@@ -404,7 +404,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Cappuccino</h5>
                                 <a>Rp 10.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Minuman khas Italia dengan aroma susu.</p>
                                 <p>Jumlah : <a id="jml-mnm-6">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mnm-6" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mnm-6" onclick="return false;">-</a>
@@ -417,7 +417,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Kopi Tubruk</h5>
                                 <a>Rp 6.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Kopi hitam lokal minuman anak muda.</p>
                                 <p>Jumlah : <a id="jml-mnm-7">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mnm-7" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mnm-7" onclick="return false;">-</a>
@@ -430,7 +430,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Kopi V60</h5>
                                 <a>Rp 15.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Kopi dengan penyaringan teknik V60.</p>
                                 <p>Jumlah : <a id="jml-mnm-8">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mnm-8" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mnm-8" onclick="return false;">-</a>
@@ -441,9 +441,9 @@
                         <div class="card">
                             <img src="https://img.freepik.com/free-photo/cup-hot-butterfly-pea-latte-blue-spirulina-latte-wooden-table_226903-345.jpg?size=626&ext=jpg" class="card-img-top" alt="" />
                             <div class="card-body">
-                                <h5 class="card-title">Blue Late</h5>
+                                <h5 class="card-title">Blue Latte</h5>
                                 <a>Rp 12.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Kopi latte dengan campuran susu dengan Bunga Telang.</p>
                                 <p>Jumlah : <a id="jml-mnm-9">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mnm-9" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mnm-9" onclick="return false;">-</a>
@@ -456,7 +456,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Coconut Latte</h5>
                                 <a>Rp 10.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Kopi latte dengan campuran rasa kelapa.</p>
                                 <p>Jumlah : <a id="jml-mnm-10">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mnm-10" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mnm-10" onclick="return false;">-</a>
@@ -467,9 +467,9 @@
                         <div class="card">
                             <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" class="card-img-top" alt="" />
                             <div class="card-body">
-                                <h5 class="card-title">Matcha Late</h5>
+                                <h5 class="card-title">Matcha Latte</h5>
                                 <a>Rp 12.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Kopi latte dengan campuran Matcha.</p>
                                 <p>Jumlah : <a id="jml-mnm-11">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mnm-11" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mnm-11" onclick="return false;">-</a>
@@ -482,7 +482,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Chocolate</h5>
                                 <a>Rp 8.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Minuman coklat untuk bersantai.</p>
                                 <p>Jumlah : <a id="jml-mnm-12">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mnm-12" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mnm-12" onclick="return false;">-</a>
@@ -495,7 +495,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Lemon Tea</h5>
                                 <a>Rp 7.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Teh lemon dengan perasan sari lemon asli.</p>
                                 <p>Jumlah : <a id="jml-mnm-13">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mnm-13" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mnm-13" onclick="return false;">-</a>
@@ -508,7 +508,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Orange Juice</h5>
                                 <a>Rp 10.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Jus jeruk dengan perasan sari jeruk asli.</p>
                                 <p>Jumlah : <a id="jml-mnm-14">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mnm-14" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mnm-14" onclick="return false;">-</a>
@@ -521,7 +521,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Mineral Water</h5>
                                 <a>Rp 3.000</a>
-                                <p class="card-formMakanan">This is a longer card with supporting formMakanan below.</p>
+                                <p class="card-formMakanan">Aqua.</p>
                                 <p>Jumlah : <a id="jml-mnm-15">0</a></p>
                                 <a href="#" class="btn btn-danger" id="ps-mnm-15" onclick="return false;">Keranjang +</a>
                                 <a href="#" class="btn btn-dark" id="ms-mnm-15" onclick="return false;">-</a>
@@ -531,7 +531,60 @@
                 </div>
             </div>
         </div>
+        
+        <div class="d-flex justify-content-center my-5">
+        	<h5 class="fst-italic text-center w-75 mb-5">"Orang-orang bilang uang tidak bisa membeli kebahagiaan. Mereka berbohong. Uang bisa untuk membeli kopi dan kopi membuat orang bahagia"</h5>
+        </div>
         <!-- stop menu -->
+		
+		<!-- footer -->
+		<div class="container">
+		    <footer class="py-5">
+		        <div class="row">
+		            <div class="col-6">
+		                <h5>Kedai Kopi Mercury</h5>
+		                <ul class="nav flex-column">
+		                    <li class="nav-item mt-3"><p>Alamat : Salatiga, Jawa Tengah, Indonesia</p></li>
+		                    <li class="nav-item"><p>Telepon : +672019005 / +672019171</p></li>
+		                    <li class="nav-item"><p>Terima Pesanan Makanan dan Minuman Kopi Mercury untuk Pernikahan, Pesta Ulang Tahun, Acara Keluarga, dan lain-lain</p></li>
+		                </ul>
+		            </div>
+		
+		            <div class="col-4 offset-1">
+		                <form>
+		                    <h5>Ada kritik dan saran?</h5>
+		                    <p>Kami sangat terbuka terhadap masukan dari anda.</p>
+		                    <div class="d-flex w-100 gap-2">
+		                        <label for="newsletter1" class="visually-hidden">Masukan</label>
+		                        <input id="newsletter1" type="text" class="form-control" placeholder="Masukan" />
+		                        <button class="btn btn-primary" type="button">Kirim</button>
+		                    </div>
+		                </form>
+		            </div>
+		        </div>
+		        <div class="d-flex justify-content-between py-4 my-4 border-top">
+		            <p>Mercury © 2021, All rights reserved.</p>
+		            <ul class="list-unstyled d-flex">
+		                <li class="ms-3">
+		                    <a class="link-dark" href="#"
+		                        ><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg
+		                    ></a>
+		                </li>
+		                <li class="ms-3">
+		                    <a class="link-dark" href="#"
+		                        ><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg
+		                    ></a>
+		                </li>
+		                <li class="ms-3">
+		                    <a class="link-dark" href="#"
+		                        ><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg
+		                    ></a>
+		                </li>
+		            </ul>
+		        </div>
+		    </footer>
+		</div>
+		<!-- stop footer -->
 		
 		<script>
 			// Makanan
