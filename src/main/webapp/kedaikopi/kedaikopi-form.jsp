@@ -544,7 +544,7 @@
 		            <div class="col-6">
 		                <h5>Kedai Kopi Mercury</h5>
 		                <ul class="nav flex-column">
-		                    <li class="nav-item mt-3"><p>Alamat : Salatiga, Jawa Tengah, Indonesia</p></li>
+		                    <li class="nav-item mt-3"><p>Alamat : Blotongan, Salatiga, Jawa Tengah, Indonesia</p></li>
 		                    <li class="nav-item"><p>Telepon : +672019005 / +672019171</p></li>
 		                    <li class="nav-item"><p>Terima Pesanan Makanan dan Minuman Kopi Mercury untuk Pernikahan, Pesta Ulang Tahun, Acara Keluarga, dan lain-lain</p></li>
 		                </ul>
