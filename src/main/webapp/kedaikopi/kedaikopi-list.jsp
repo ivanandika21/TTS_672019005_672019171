@@ -77,8 +77,8 @@
 									<c:out value="Sudah bayar" />
 			            		</c:if>
 							<td>
-                                <a class="btn btn-primary my-1" href="edit?id=<c:out value='${kedaikopi.id}' />">Edit</a>&nbsp;&nbsp;
-                                <a class="btn btn-danger my-1" href="delete?id=<c:out value='${kedaikopi.id}' />">Delete</a>
+                                <a class="btn btn-primary my-1 px-4" href="edit?id=<c:out value='${kedaikopi.id}' />">Edit</a>&nbsp;&nbsp;
+                                <a class="btn btn-danger my-1 px-3" href="delete?id=<c:out value='${kedaikopi.id}' />">Delete</a>
                             </td>
 						</tr>
 					</c:forEach>

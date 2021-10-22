@@ -44,7 +44,7 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title">Confirmation</h5>
+                                            <h5 class="modal-title">Tambahkan Pesanan</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                         </div>
                                         <div class="modal-body">
@@ -55,16 +55,6 @@
 											<c:if test="${kedaikopi == null}">
 												<form action="insert" method="post">
 											</c:if>
-											<caption>
-												<h2>
-													<c:if test="${kedaikopi != null}">
-							            			Edit Transaksi
-							            		</c:if>
-													<c:if test="${kedaikopi == null}">
-							            			Tambahkan Pesanan
-							            		</c:if>
-												</h2>
-											</caption>
 							
 											<c:if test="${kedaikopi != null}">
 												<input type="hidden" name="id" value="<c:out value='${kedaikopi.id}' />" />
@@ -345,7 +335,7 @@
                 <div class="row row-cols-1 row-cols-md-5 g-4">
                     <div class="col">
                         <div class="card">
-                            <img src="images/img-3.jpg" class="card-img-top" alt="" />
+                            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1037&q=80" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Kopi Putih Mercury</h5>
                                 <a>Rp 8.000</a>
@@ -358,7 +348,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="images/img-3.jpg" class="card-img-top" alt="" />
+                            <img src="https://images.unsplash.com/photo-1534432295314-d934309ea09d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Kopi Susu Mercury</h5>
                                 <a>Rp 10.000</a>
@@ -371,7 +361,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="images/img-3.jpg" class="card-img-top" alt="" />
+                            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Expresso</h5>
                                 <a>Rp 11.000</a>
@@ -384,7 +374,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="images/img-3.jpg" class="card-img-top" alt="" />
+                            <img src="https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Americano</h5>
                                 <a>Rp 11.000</a>
@@ -397,7 +387,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="images/img-3.jpg" class="card-img-top" alt="" />
+                            <img src="https://images.unsplash.com/photo-1471922597728-92f81bfe2445?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Cafe Latte</h5>
                                 <a>Rp 9.000</a>
@@ -410,7 +400,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="images/img-3.jpg" class="card-img-top" alt="" />
+                            <img src="https://images.unsplash.com/photo-1516036213144-bcac9086b5a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=895&q=80" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Cappuccino</h5>
                                 <a>Rp 10.000</a>
@@ -423,7 +413,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="images/img-3.jpg" class="card-img-top" alt="" />
+                            <img src="https://images.unsplash.com/photo-1516486392848-8b67ef89f113?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Kopi Tubruk</h5>
                                 <a>Rp 6.000</a>
@@ -436,7 +426,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="images/img-3.jpg" class="card-img-top" alt="" />
+                            <img src="https://images.unsplash.com/photo-1517578239113-b03992dcdd25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Kopi V60</h5>
                                 <a>Rp 15.000</a>
@@ -449,7 +439,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="images/img-3.jpg" class="card-img-top" alt="" />
+                            <img src="https://img.freepik.com/free-photo/cup-hot-butterfly-pea-latte-blue-spirulina-latte-wooden-table_226903-345.jpg?size=626&ext=jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Blue Late</h5>
                                 <a>Rp 12.000</a>
@@ -462,7 +452,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="images/img-3.jpg" class="card-img-top" alt="" />
+                            <img src="https://images.unsplash.com/photo-1582202736985-a259ba984298?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Coconut Latte</h5>
                                 <a>Rp 10.000</a>
@@ -475,7 +465,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="images/img-3.jpg" class="card-img-top" alt="" />
+                            <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Matcha Late</h5>
                                 <a>Rp 12.000</a>
@@ -488,7 +478,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="images/img-3.jpg" class="card-img-top" alt="" />
+                            <img src="https://images.unsplash.com/photo-1586195831800-24f14c992cea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Chocolate</h5>
                                 <a>Rp 8.000</a>
@@ -501,7 +491,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="images/img-3.jpg" class="card-img-top" alt="" />
+                            <img src="https://images.unsplash.com/photo-1625574200148-c0954d241f7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Lemon Tea</h5>
                                 <a>Rp 7.000</a>
@@ -514,7 +504,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="images/img-3.jpg" class="card-img-top" alt="" />
+                            <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Orange Juice</h5>
                                 <a>Rp 10.000</a>
@@ -527,7 +517,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="images/img-3.jpg" class="card-img-top" alt="" />
+                            <img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1036&q=80" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h5 class="card-title">Mineral Water</h5>
                                 <a>Rp 3.000</a>
