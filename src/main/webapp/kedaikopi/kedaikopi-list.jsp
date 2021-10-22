@@ -36,6 +36,9 @@
                         <li class="nav-item ps-2">
                             <a href="<%=request.getContextPath()%>/new" class="btn btn-secondary">Add Item</a>
                         </li>
+                        <li class="nav-item ps-2">
+                            <a href="./kedaikopi/kedaikopi-excel.jsp" class="btn btn-success">Cetak Excel</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -83,6 +86,7 @@
 			            		<c:if test="${kedaikopi.verifikasi == true}">
 									<c:out value="Sudah bayar" />
 			            		</c:if>
+			            	</td>
 							<td>
                                 <a class="btn btn-primary my-1 px-4" href="edit?id=<c:out value='${kedaikopi.id}' />">Edit</a>&nbsp;&nbsp;
                                 <a class="btn btn-danger my-1 px-3" href="delete?id=<c:out value='${kedaikopi.id}' />">Delete</a>

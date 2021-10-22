@@ -59,7 +59,7 @@ public class KedaikopiController extends HttpServlet {
 			throw new ServletException(ex);
 		}
 	}
-	
+
 	private void insertData(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
 		String makanan = request.getParameter("makanan");
 		String minuman = request.getParameter("minuman");
@@ -92,7 +92,6 @@ public class KedaikopiController extends HttpServlet {
 		kedaikopiDao.deleteData(id);
 		response.sendRedirect("list");
 	}
-	
 	
 	private void listKedaikopi(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException {
 		List<Kedaikopi> listKedaikopi = kedaikopiDao.selectAllTodos();
