@@ -40,8 +40,6 @@ public class Kedaikopi {
 		
 	}
 
-	
-
 	public Kedaikopi(long id, String makanan, String minuman, String jumlahMkn, String jumlahMnm, String hargatotal, boolean verifikasi) {
 		super();
 		this.id = id;
