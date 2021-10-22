@@ -49,14 +49,16 @@
                     </p>
                     <ul>
                         <li>Java Programming Language</li>
-                        <li>JavaServer Pages (JSP)</li>
-                        <li>JavaServer Faces (JSF)</li>
+                        <li>MVC Design Pattern</li>
                         <li>Hibernate ORM</li>
-                        <li>JSTL</li>
-                        <li>JDK</li>
+                        <li>JavaServer Faces (JSF)</li>
+                        <li>JavaServer Pages (JSP)</li>
+                        <li>JSP Standard Tag Library (JSTL)</li>
+                        <li>Bootstrap 5</li>
+                        <li>Servlet</li>
+                        <li>Java Development Kit (JDK)</li>
                         <li>Apache Tomcat Server</li>
                         <li>MySQL</li>
-                        <li>Bootstrap 5</li>
                     </ul>
                 </div>
             </div>

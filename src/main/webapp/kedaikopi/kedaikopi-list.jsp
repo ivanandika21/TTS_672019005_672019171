@@ -34,7 +34,7 @@
                             <a class="nav-link fw-bold text-danger" href="">Admin</a>
                         </li>
                         <li class="nav-item ps-2">
-                            <a href="<%=request.getContextPath()%>/new" class="btn btn-secondary">Add Item</a>
+                            <a href="<%=request.getContextPath()%>/new" class="btn btn-secondary">Tambah</a>
                         </li>
                         <li class="nav-item ps-2">
                             <a href="./kedaikopi/kedaikopi-excel.jsp" class="btn btn-success">Cetak Excel</a>
