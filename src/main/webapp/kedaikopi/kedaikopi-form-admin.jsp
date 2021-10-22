@@ -28,7 +28,7 @@
                             <a class="nav-link" href="<%=request.getContextPath()%>/new">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./kedaikopi/about.jsp">About</a>
+                            <a class="nav-link" href="./kedaikopi/kedaikopi-about.jsp">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<%=request.getContextPath()%>/">Admin</a>
@@ -53,7 +53,7 @@
 						</c:if>
 						<caption>
 							<h2>
-								<c:if test="${kedaikopi != null}">
+							<c:if test="${kedaikopi != null}">
 		            			Edit Transaksi
 		            		</c:if>
 								<c:if test="${kedaikopi == null}">

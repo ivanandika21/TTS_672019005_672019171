@@ -28,7 +28,7 @@
                             <a class="nav-link" href="<%=request.getContextPath()%>/new">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./kedaikopi/about.jsp">About</a>
+                            <a class="nav-link" href="./kedaikopi/kedaikopi-about.jsp">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-bold text-danger" href="">Admin</a>
@@ -69,7 +69,13 @@
 							<td><c:out value="${kedaikopi.minuman}" /></td>
 							<td><c:out value="${kedaikopi.jumlahMnm}" /></td>
 							<td><c:out value="${kedaikopi.hargatotal}" /></td>
-							<td><c:out value="${kedaikopi.verifikasi}" /></td>
+							<td>
+								<c:if test="${kedaikopi.verifikasi == false}">
+			            			<c:out value="Belum bayar" />
+			            		</c:if>
+			            		<c:if test="${kedaikopi.verifikasi == true}">
+									<c:out value="Sudah bayar" />
+			            		</c:if>
 							<td>
                                 <a class="btn btn-primary my-1" href="edit?id=<c:out value='${kedaikopi.id}' />">Edit</a>&nbsp;&nbsp;
                                 <a class="btn btn-danger my-1" href="delete?id=<c:out value='${kedaikopi.id}' />">Delete</a>
