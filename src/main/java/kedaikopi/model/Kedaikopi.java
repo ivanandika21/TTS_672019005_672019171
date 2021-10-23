@@ -7,12 +7,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-// membuat tabel keranjang
 @Entity
 @Table(name = "keranjang")
 public class Kedaikopi {
 	
-	// mendeklarasikan variabel untuk dikirim ke db
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
@@ -35,7 +33,6 @@ public class Kedaikopi {
 	@Column(name = "verifikasi")
 	private boolean verifikasi;
 	
-	// membuat getter dan setter
 	protected Kedaikopi() {
 		
 	}
